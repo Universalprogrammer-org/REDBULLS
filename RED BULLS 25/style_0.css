@@ -187,12 +187,12 @@ html, body{
   font-family: RealFont, Arial, sans-serif;
 }
 .cycle{
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0);
   border-color: blue;
   border-radius: 400px;
   border-style: solid;
   border-width: 5px;
-  top: 540px;
+  top: 537px;
   left: 40px;
   height: 120px;
   width: 120px;
