@@ -8,12 +8,19 @@ html, body{
 .logo1{
     position: relative;
     top: 30%;
-    left: 60%;
+    left: 45%;
 }
 .logo2{
     position: fixed;
     top: 80%;
     left: 25%;
+    width: 7%;
+    height: 17%;
+}
+.logo3{
+    position: fixed;
+    top: 80%;
+    left: 75%;
     width: 7%;
     height: 17%;
 }
@@ -28,7 +35,7 @@ html, body{
 .input{
     position: relative;
     top: 10%;
-    left: 15%;
+    left: 0%;
     background-color: rgb(255, 220, 220);
     border: none;
     border-color: gray;
@@ -39,7 +46,7 @@ html, body{
 }
 .button{
   position: relative;
-  left: 2%;
+  left: -13%;
   top: 20%;
   background-color: black;
   color: white;
@@ -65,21 +72,16 @@ html, body{
 .font1{
   position: relative;
   top: -30%;
-  left: -10%;
+  left: 40%;
   display: inline-block;
   font-size: 50px;
   font-family: RealFont, Arial, sans-serif;
 }
 .cycle{
-  background-color: rgba(0, 0, 0, 0);
-  border-color: blue;
-  border-radius: 400px;
-  border-style: solid;
-  border-width: 5px;
   top: 640px;
-  left: 40px;
+  left: 35px;
   height: 120px;
-  width: 120px;
+  width: 200px;
   position: fixed;
 }
 .font2{
@@ -187,15 +189,10 @@ html, body{
   font-family: RealFont, Arial, sans-serif;
 }
 .cycle{
-  background-color: rgba(0, 0, 0, 0);
-  border-color: blue;
-  border-radius: 400px;
-  border-style: solid;
-  border-width: 5px;
-  top: 535px;
-  left: 40px;
+  top: 640px;
+  left: 35px;
   height: 120px;
-  width: 120px;
+  width: 200px;
   position: fixed;
 }
 .font2{
@@ -304,16 +301,11 @@ html, body{
   font-family: RealFont, Arial, sans-serif;
 }
 .cycle{
-  background-color: rgba(0, 0, 0, 0);
-  border-color: blue;
-  border-radius: 400px;
-  border-style: solid;
-  border-width: 5px;
-  top: 500px;
-  left: 40px;
+  position: static;
+  top: 640px;
+  left: 35px;
   height: 120px;
-  width: 120px;
-  position: fixed;
+  width: 270px;
 }
 .font2{
   position: fixed;
@@ -410,13 +402,11 @@ html, body{
   }
   .cycle {
     position: static;
-    margin: 20px auto;
-    width: 60vw;
-    height: 60vw;
-    max-width: 120px;
-    max-height: 120px;
+    width: 250px;
     left: 0;
     top: 0;
+    display: block;
+    margin: 30px auto 10px auto;
   }
   .font2, .font3, .font4, .font5 {
     position: static;
