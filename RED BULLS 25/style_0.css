@@ -113,6 +113,123 @@ html, body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media (max-width: 1400px) {
+  html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: red;
+  overflow-x: hidden;
+}
+.logo1{
+    position: relative;
+    top: 30%;
+    left: 60%;
+}
+.logo2{
+    position: fixed;
+    top: 80%;
+    left: 25%;
+    width: 7%;
+    height: 17%;
+}
+#visualizer-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+.input{
+    position: relative;
+    top: 10%;
+    left: 15%;
+    background-color: rgb(255, 220, 220);
+    border: none;
+    border-color: gray;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 2;
+}
+.button{
+  position: relative;
+  left: 2%;
+  top: 20%;
+  background-color: black;
+  color: white;
+  border: ridge;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+  z-index: 2;
+}
+.button:hover{
+  background-color: white;
+  color: black;
+}
+.button:active{
+  background-color: rgb(255, 100, 100);
+  color: black;
+  box-shadow: 0px 0px 5px 5px;
+}
+@font-face {
+  font-family: 'RealFont';
+  src: url('Danger\ Zone\ Warning.ttf') format('woff2');
+}
+.font1{
+  position: relative;
+  top: -30%;
+  left: -10%;
+  display: inline-block;
+  font-size: 50px;
+  font-family: RealFont, Arial, sans-serif;
+}
+.cycle{
+  background-color: rgba(0, 0, 0, 0);
+  border-color: blue;
+  border-radius: 400px;
+  border-style: solid;
+  border-width: 5px;
+  top: 500px;
+  left: 40px;
+  height: 120px;
+  width: 120px;
+  position: fixed;
+}
+.font2{
+  position: fixed;
+  top: 83%;
+  left: 5%;
+  font-size: 25px;
+  z-index: 5;
+}
+.font3{
+  position: fixed;
+  top: 85%;
+  left: 7%;
+  font-size: 25px;
+  z-index: 5;
+}
+.font4{
+  position: fixed;
+  top: 90%;
+  left: 13%;
+  font-size: 20px;
+  z-index: 5;
+  font-family: 'Times New Roman', Times, serif;
+}
+.font5{
+  position: fixed;
+  top: 70%;
+  left: 1%;
+  font-size: 25px;
+  z-index: 5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+}
+
 @media (max-width: 1200px) {
 html, body{
   margin: 0;
@@ -192,7 +309,7 @@ html, body{
   border-radius: 400px;
   border-style: solid;
   border-width: 5px;
-  top: 600px;
+  top: 500px;
   left: 40px;
   height: 120px;
   width: 120px;
