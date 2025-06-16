@@ -83,30 +83,30 @@ html, body{
   position: relative;
 }
 .font2{
-  position: relative;
-  top: 18%;
+  position: fixed;
+  top: 83%;
   left: 5%;
   font-size: 25px;
   z-index: 5;
 }
 .font3{
-  position: relative;
-  top: 14%;
+  position: fixed;
+  top: 85%;
   left: 7%;
   font-size: 25px;
   z-index: 5;
 }
 .font4{
-  position: relative;
-  top: 12%;
+  position: fixed;
+  top: 90%;
   left: 13%;
   font-size: 20px;
   z-index: 5;
   font-family: 'Times New Roman', Times, serif;
 }
 .font5{
-  position: relative;
-  top: -15%;
+  position: fixed;
+  top: 70%;
   left: 1%;
   font-size: 25px;
   z-index: 5;
