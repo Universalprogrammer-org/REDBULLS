@@ -33,7 +33,6 @@ function draw() {
 
   translate(width / 2, height / 2);
 
-  // Ajusta el radio base y deformación según el tamaño de pantalla
   let minDim = min(width, height);
   let baseRadius = minDim * 0.28;
   let deformMax = minDim * 0.33;
@@ -43,7 +42,7 @@ function draw() {
   let spectrumStep = Math.floor(spectrum.length / points);
   beginShape();
   stroke(255, 255, 0, 200);
-  strokeWeight(minDim * 0.008); // grosor proporcional
+  strokeWeight(minDim * 0.008);
   noFill();
   for (let i = 0; i < points; i++) {
     let angle = map(i, 0, points, 0, TWO_PI);
@@ -58,11 +57,6 @@ function draw() {
     let y = r * sin(angle);
     vertex(x, y);
 
-    if (amp > 120 && frameCount % 1 === 0) {
-      let pSize = map(amp, 0, 256, minDim * 0.02, minDim * 0.04);
-      let pSpeed = map(amp, 0, 256, minDim * 0.004, minDim * 0.015);
-      particles.push(new Particle(x, y, angle + random(-0.5, 0.5), pSpeed, pSize));
-    }
   }
   endShape(CLOSE);
 
@@ -76,7 +70,6 @@ function draw() {
   ellipse(0, 0, 2 * (baseRadius + map(avgAmp, 0, 256, 0, deformMax)));
   pop();
 
-  // Ajusta los efectos de chispas y partículas para móviles
   if (energy > 200 && Math.random() < 0.2) {
     let angle = random(TWO_PI);
     let r = baseRadius + random(minDim * 0.08, minDim * 0.4);
@@ -112,7 +105,6 @@ function draw() {
     }
   }
 
-  // Fondo de estrellas adaptado a pantalla
   let stars = [];
   for (let i = 0; i < 120; i++) {
     stars.push({
