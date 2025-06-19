@@ -466,8 +466,8 @@ html, body{
 }
 .logo1{
     position: relative;
-    top: 30%;
-    left: 45%;
+    top: 17%;
+    left: 20%;
 }
 .logo2{
     position: fixed;
@@ -530,8 +530,8 @@ html, body{
 }
 .font1{
   position: relative;
-  top: 100%;
-  left: 40%;
+  top: -60%;
+  left: 33%;
   display: inline-block;
   font-size: 50px;
   font-family: RealFont, Arial, sans-serif;
