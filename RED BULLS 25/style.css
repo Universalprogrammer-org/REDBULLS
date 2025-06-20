@@ -1,422 +1,80 @@
 html, body{
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: red;
-  overflow-x: hidden;
+    background-color: white;
+    animation: colors 10s infinite;
+    transition: 1s;
 }
-.logo1{
-    position: relative;
-    top: 30%;
-    left: 45%;
+@keyframes colors{
+    0% {background-color: white;}
+    50% {background-color: red;}
+    100% {background-color: white;}
 }
-.logo2{
-    position: fixed;
-    top: 80%;
-    left: 25%;
-    width: 7%;
-    height: 17%;
-}
-.logo3{
-    position: fixed;
-    top: 80%;
-    left: 75%;
-    width: 7%;
-    height: 17%;
-}
-#visualizer-container {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-  pointer-events: none;
-}
-.input{
-    position: relative;
-    top: 10%;
-    left: 0%;
-    background-color: rgb(255, 220, 220);
-    border: none;
-    border-color: gray;
-    border-radius: 5px;
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    z-index: 2;
-}
-.button{
-  position: relative;
-  left: -13%;
-  top: 20%;
-  background-color: black;
-  color: white;
-  border: ridge;
-  cursor: pointer;
-  font-size: 20px;
-  transition: 0.5s;
-  z-index: 2;
-}
-.button:hover{
-  background-color: white;
-  color: black;
-}
-.button:active{
-  background-color: rgb(255, 100, 100);
-  color: black;
-  box-shadow: 0px 0px 5px 5px;
-}
-@font-face {
-  font-family: 'RealFont';
-  src: url('Danger\ Zone\ Warning.ttf') format('woff2');
-}
-.font1{
-  position: relative;
-  top: -30%;
-  left: 40%;
-  display: inline-block;
-  font-size: 50px;
-  font-family: RealFont, Arial, sans-serif;
-}
-.cycle{
-  top: 640px;
-  left: 35px;
-  height: 120px;
-  width: 200px;
-  position: fixed;
-}
-.font2{
-  position: fixed;
-  top: 83%;
-  left: 5%;
-  font-size: 25px;
-  z-index: 5;
-}
-.font3{
-  position: fixed;
-  top: 85%;
-  left: 7%;
-  font-size: 25px;
-  z-index: 5;
-}
-.font4{
-  position: fixed;
-  top: 90%;
-  left: 13%;
-  font-size: 20px;
-  z-index: 5;
-  font-family: 'Times New Roman', Times, serif;
-}
-.font5{
-  position: fixed;
-  top: 70%;
-  left: 1%;
-  font-size: 25px;
-  z-index: 5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 @media (max-width: 1400px) {
-  html, body{
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: red;
-  overflow-x: hidden;
-}
-.logo1{
-    position: relative;
-    top: 30%;
-    left: 60%;
-}
-.logo2{
-    position: fixed;
-    top: 80%;
-    left: 25%;
-    width: 7%;
-    height: 17%;
-}
-#visualizer-container {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-  pointer-events: none;
-}
-.input{
-    position: relative;
-    top: 10%;
-    left: 15%;
-    background-color: rgb(255, 220, 220);
-    border: none;
-    border-color: gray;
-    border-radius: 5px;
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    z-index: 2;
-}
-.button{
-  position: relative;
-  left: 2%;
-  top: 20%;
-  background-color: black;
-  color: white;
-  border: ridge;
-  cursor: pointer;
-  font-size: 20px;
-  transition: 0.5s;
-  z-index: 2;
-}
-.button:hover{
-  background-color: white;
-  color: black;
-}
-.button:active{
-  background-color: rgb(255, 100, 100);
-  color: black;
-  box-shadow: 0px 0px 5px 5px;
-}
-@font-face {
-  font-family: 'RealFont';
-  src: url('Danger\ Zone\ Warning.ttf') format('woff2');
-}
-.font1{
-  position: relative;
-  top: -30%;
-  left: -10%;
-  display: inline-block;
-  font-size: 50px;
-  font-family: RealFont, Arial, sans-serif;
-}
-.cycle{
-  top: 640px;
-  left: 35px;
-  height: 120px;
-  width: 200px;
-  position: fixed;
-}
-.font2{
-  position: fixed;
-  top: 83%;
-  left: 5%;
-  font-size: 25px;
-  z-index: 5;
-}
-.font3{
-  position: fixed;
-  top: 85%;
-  left: 7%;
-  font-size: 25px;
-  z-index: 5;
-}
-.font4{
-  position: fixed;
-  top: 90%;
-  left: 13%;
-  font-size: 20px;
-  z-index: 5;
-  font-family: 'Times New Roman', Times, serif;
-}
-.font5{
-  position: fixed;
-  top: 70%;
-  left: 1%;
-  font-size: 25px;
-  z-index: 5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    html, body{
+        background-color: white;
+        animation: colors 10s infinite;
+        transition: 1s;
+    }
+    @keyframes colors{
+        0% {background-color: white;}
+        50% {background-color: red;}
+        100% {background-color: white;}
+    }
 }
 
+
 @media (max-width: 1200px) {
-html, body{
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: red;
-  overflow-x: hidden;
+    html, body{
+        background-color: white;
+        animation: colors 10s infinite;
+        transition: 1s;
+    }
+    @keyframes colors{
+        0% {background-color: white;}
+        50% {background-color: red;}
+        100% {background-color: white;}
+    }
 }
-.logo1{
-    position: relative;
-    top: 30%;
-    left: 60%;
+
+
+@media (max-width: 1000px) {
+    html, body{
+        background-color: white;
+        animation: colors 10s infinite;
+        transition: 1s;
+    }
+    @keyframes colors{
+        0% {background-color: white;}
+        50% {background-color: red;}
+        100% {background-color: white;}
+    }
 }
-.logo2{
-    position: fixed;
-    top: 80%;
-    left: 25%;
-    width: 7%;
-    height: 17%;
+
+
+@media (max-width: 800px) {
+    html, body{
+        background-color: white;
+        animation: colors 10s infinite;
+        transition: 1s;
 }
-#visualizer-container {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-  pointer-events: none;
+    @keyframes colors{
+        0% {background-color: white;}
+        50% {background-color: red;}
+        100% {background-color: white;}
+    }
 }
-.input{
-    position: relative;
-    top: 10%;
-    left: 15%;
-    background-color: rgb(255, 220, 220);
-    border: none;
-    border-color: gray;
-    border-radius: 5px;
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    z-index: 2;
-}
-.button{
-  position: relative;
-  left: 2%;
-  top: 20%;
-  background-color: black;
-  color: white;
-  border: ridge;
-  cursor: pointer;
-  font-size: 20px;
-  transition: 0.5s;
-  z-index: 2;
-}
-.button:hover{
-  background-color: white;
-  color: black;
-}
-.button:active{
-  background-color: rgb(255, 100, 100);
-  color: black;
-  box-shadow: 0px 0px 5px 5px;
-}
-@font-face {
-  font-family: 'RealFont';
-  src: url('Danger\ Zone\ Warning.ttf') format('woff2');
-}
-.font1{
-  position: relative;
-  top: -30%;
-  left: -10%;
-  display: inline-block;
-  font-size: 50px;
-  font-family: RealFont, Arial, sans-serif;
-}
-.cycle{
-  position: static;
-  top: 640px;
-  left: 35px;
-  height: 120px;
-  width: 270px;
-}
-.font2{
-  position: fixed;
-  top: 83%;
-  left: 5%;
-  font-size: 25px;
-  z-index: 5;
-}
-.font3{
-  position: fixed;
-  top: 85%;
-  left: 7%;
-  font-size: 25px;
-  z-index: 5;
-}
-.font4{
-  position: fixed;
-  top: 90%;
-  left: 13%;
-  font-size: 20px;
-  z-index: 5;
-  font-family: 'Times New Roman', Times, serif;
-}
-.font5{
-  position: fixed;
-  top: 70%;
-  left: 1%;
-  font-size: 25px;
-  z-index: 5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-}
+
+
 @media (max-width: 600px) {
-  html, body {
-    width: 100vw;
-    min-height: 100vh;
-    overflow-x: hidden;
-    font-size: 16px;
-  }
-  .logo1 {
-    position: static;
-    display: block;
-    margin: 30px auto 10px auto;
-    width: 60vw;
-    height: auto;
-    top: 0;
-    left: 0;
-    max-width: 90vw;
-  }
-  .logo2 {
-    position: static;
-    display: block;
-    margin: 10px auto;
-    width: 30vw;
-    height: auto;
-    top: 0;
-    left: 0;
-    max-width: 40vw;
-  }
-  #visualizer-container {
-    width: 100vw;
-    height: 100vh;
-    min-height: 100vh;
-    min-width: 100vw;
-  }
-  .input {
-    position: static;
-    display: block;
-    margin: 20px auto;
-    width: 80vw;
-    font-size: 22px;
-    left: 0;
-    top: 0;
-  }
-  .button {
-    position: static;
-    display: block;
-    margin: 10px auto 20px auto;
-    width: 60vw;
-    font-size: 20px;
-    left: 0;
-    top: 0;
-  }
-  .font1 {
-    position: static;
-    display: block;
-    margin: 10px auto;
-    font-size: 32px;
-    left: 0;
-    top: 0;
-    text-align: center;
-    max-width: 95vw;
-    word-break: break-word;
-  }
-  .cycle {
-    position: static;
-    width: 250px;
-    left: 0;
-    top: 0;
-    display: block;
-    margin: 30px auto 10px auto;
-  }
-  .font2, .font3, .font4, .font5 {
-    position: static;
-    display: block;
-    margin: 8px auto;
-    font-size: 18px;
-    left: 0;
-    top: 0;
-    text-align: center;
-    max-width: 95vw;
-    word-break: break-word;
-  }
+    html, body{
+        background-color: white;
+        animation: colors 10s infinite;
+        transition: 1s;
+}
+    @keyframes colors{
+        0% {background-color: white;}
+        50% {background-color: red;}
+        100% {background-color: white;}
+    }
 }
