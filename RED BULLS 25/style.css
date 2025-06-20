@@ -13,6 +13,16 @@ html, body{
     top: 0;
     left: 0;
 }
+@font-face {
+  font-family: 'RealFont';
+  src: url('Danger\ Zone\ Warning.ttf') format('woff2');
+}
+.font1{
+    font-family: RealFont, Arial, sans-serif;
+    position: fixed;
+    left: 40%;
+    top: -10px;
+}
 @keyframes colors{
     0% {background-color: white;}
     50% {background-color: red;}
