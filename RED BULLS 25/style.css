@@ -1,3 +1,4 @@
+/* Coment */
 html, body{
     background-color: white;
     animation: colors 10s infinite;
@@ -22,6 +23,22 @@ html, body{
     left: 40%;
     top: -10px;
 }
+.font2{
+    top: 250px;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.bar2{
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 1500px;
+    height: 100px;
+    position: relative;
+    top: 270px;
+    left: 50px;
+    border-width: 5px;
+    border-radius: 20px;
+}
 @keyframes colors{
     0% {background-color: white;}
     50% {background-color: red;}
@@ -34,6 +51,22 @@ html, body{
         background-color: white;
         animation: colors 10s infinite;
         transition: 1s;
+    }
+    .font2{
+        top: 250px;
+        position: relative;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .bar2{
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        width: 1500px;
+        height: 100px;
+        position: relative;
+        top: 270px;
+        left: 50px;
+        border-width: 5px;
+        border-radius: 20px;
     }
     @keyframes colors{
         0% {background-color: white;}
@@ -49,6 +82,22 @@ html, body{
         animation: colors 10s infinite;
         transition: 1s;
     }
+    .font2{
+        top: 250px;
+        position: relative;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .bar2{
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        width: 1500px;
+        height: 100px;
+        position: relative;
+        top: 270px;
+        left: 50px;
+        border-width: 5px;
+        border-radius: 20px;
+    }
     @keyframes colors{
         0% {background-color: white;}
         50% {background-color: red;}
@@ -63,6 +112,22 @@ html, body{
         animation: colors 10s infinite;
         transition: 1s;
     }
+    .font2{
+        top: 250px;
+        position: relative;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .bar2{
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        width: 1500px;
+        height: 100px;
+        position: relative;
+        top: 270px;
+        left: 50px;
+        border-width: 5px;
+        border-radius: 20px;
+    }
     @keyframes colors{
         0% {background-color: white;}
         50% {background-color: red;}
@@ -76,7 +141,23 @@ html, body{
         background-color: white;
         animation: colors 10s infinite;
         transition: 1s;
-}
+    }
+    .font2{
+        top: 250px;
+        position: relative;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .bar2{
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        width: 1500px;
+        height: 100px;
+        position: relative;
+        top: 270px;
+        left: 50px;
+        border-width: 5px;
+        border-radius: 20px;
+    }
     @keyframes colors{
         0% {background-color: white;}
         50% {background-color: red;}
@@ -90,7 +171,23 @@ html, body{
         background-color: white;
         animation: colors 10s infinite;
         transition: 1s;
-}
+    }
+    .font2{
+        top: 250px;
+        position: relative;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .bar2{
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        width: 1500px;
+        height: 100px;
+        position: relative;
+        top: 270px;
+        left: 50px;
+        border-width: 5px;
+        border-radius: 20px;
+    }
     @keyframes colors{
         0% {background-color: white;}
         50% {background-color: red;}
