@@ -65,6 +65,7 @@ html, body{
     align-items: center;
     cursor: pointer;
     padding: 0;
+    z-index: 6;
 }
 .menu span {
   display: block;
@@ -74,11 +75,48 @@ html, body{
   margin: 4px 0;
   border-radius: 2px;
   transition: 0.3s;
+  z-index: 6;
+}
+.panel{
+    height: 900px;
+    width: 250px;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: -250px;
+    background-color: rgba(80, 0, 0, 0.5);
+    transition: 2s;
+    display: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.opcion1{
+    background-color: rgba(80, 0, 0, 0.5);
+    width: 250px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+    left: 0;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+.opcion1:active{
+    text-shadow: 10px 5px 5px white;
 }
 @keyframes colors{
     0% {background-color: white;}
     50% {background-color: red;}
     100% {background-color: white;}
+}
+@keyframes appear{
+    0% {left: -250px;}
+    100% {left: 0;}
+}
+@keyframes disapper{
+    0% {left: 0;}
+    100% {left: -250px;}
 }
 
 
