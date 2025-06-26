@@ -6,7 +6,7 @@ html, body{
 }
 .menu{
     position: relative;
-    top: 20px;
+    top: -120px;
     left: 20px;
     height: 40px;
     width: 40px;
@@ -83,6 +83,30 @@ html, body{
 }
 .opcion2:hover{
     text-shadow: 10px 5px 5px white;
+}
+@font-face {
+    font-family: 'TitleFont';
+    src: url('Darkcastle.otf') format('woff2');
+}
+@font-face {
+    font-family: 'TitleFont2';
+    src: url('Existence.ttf') format('woff2');
+}
+.font1{
+    position: relative;
+    left: 670px;
+    top: 10px;
+    font-family: TitleFont, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    display: inline-block;
+    color: red;
+}
+.font2{
+    position: relative;
+    left: 450px;
+    top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
 }
 @keyframes appear{
     0% {left: -250px;}
