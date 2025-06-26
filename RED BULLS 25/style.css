@@ -78,7 +78,7 @@ html, body{
   z-index: 6;
 }
 .panel{
-    height: 900px;
+    height: 3000px;
     width: 250px;
     position: fixed;
     z-index: 5;
