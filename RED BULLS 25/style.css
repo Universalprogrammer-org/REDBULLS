@@ -85,6 +85,7 @@ html, body{
     top: 0;
     left: -250px;
     background-color: rgba(80, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
     transition: 2s;
     display: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -103,6 +104,28 @@ html, body{
     transition: 0.5s;
 }
 .opcion1:active{
+    background-color: red;
+}
+.opcion1:hover{
+    text-shadow: 10px 5px 5px white;
+}
+.opcion2{
+    background-color: rgba(80, 0, 0, 0.5);
+    width: 250px;
+    height: 50px;
+    position: relative;
+    top: 155px;
+    left: 0;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+.opcion2:active{
+    background-color: red;
+}
+.opcion2:hover{
     text-shadow: 10px 5px 5px white;
 }
 @keyframes colors{
