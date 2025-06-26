@@ -11,9 +11,14 @@ function menu(){
         }, 1001);
     }
 }
+let a = document.getElementById("audio");
+
+a.addEventListener("click", function() {
+    a.play()
+});
 function come(){
     location.href = "Entrada.html";
 }
 function come1(){
-    location.href = "Lanzamientos.html";
+    location.href = "RED_BULLS.html";
 }
