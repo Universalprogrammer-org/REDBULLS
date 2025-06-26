@@ -19,3 +19,9 @@ function menu(){
         }, 1001);
     }
 }
+function come(){
+    location.href = "Entrada.html";
+}
+function come1(){
+    location.href = "Lanzamientos.html";
+}
