@@ -1,0 +1,94 @@
+html, body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    z-index: 6;
+}
+.menu span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  background: #333;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+  z-index: 6;
+}
+.panel{
+    height: 900px;
+    width: 250px;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: -250px;
+    background-color: rgba(80, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    transition: 2s;
+    display: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.opcion1{
+    background-color: rgba(80, 0, 0, 0.5);
+    width: 250px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+    left: 0;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+.opcion1:active{
+    background-color: red;
+}
+.opcion1:hover{
+    text-shadow: 10px 5px 5px white;
+}
+.opcion2{
+    background-color: rgba(80, 0, 0, 0.5);
+    width: 250px;
+    height: 50px;
+    position: relative;
+    top: 155px;
+    left: 0;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+.opcion2:active{
+    background-color: red;
+}
+.opcion2:hover{
+    text-shadow: 10px 5px 5px white;
+}
+@keyframes appear{
+    0% {left: -250px;}
+    100% {left: 0;}
+}
+@keyframes disapper{
+    0% {left: 0;}
+    100% {left: -250px;}
+}
