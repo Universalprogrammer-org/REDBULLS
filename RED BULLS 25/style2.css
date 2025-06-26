@@ -3,7 +3,7 @@ html, body{
 }
 .menu{
     position: relative;
-    top: -120px;
+    top: 20px;
     left: 20px;
     height: 40px;
     width: 40px;
@@ -31,7 +31,7 @@ html, body{
   z-index: 6;
 }
 .panel{
-    height: 900px;
+    height: 100%;
     width: 250px;
     position: fixed;
     z-index: 5;
@@ -90,20 +90,18 @@ html, body{
     src: url('Existence.ttf') format('woff2');
 }
 .font1{
-    position: relative;
+    position: fixed;
     left: 670px;
     top: 10px;
     font-family: TitleFont, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 60px;
-    display: inline-block;
     color: red;
 }
 .font2{
-    position: relative;
-    left: 450px;
-    top: 50px;
+    position: fixed;
+    left: 700px;
+    top: 100px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    display: inline-block;
 }
 @keyframes appear{
     0% {left: -250px;}
