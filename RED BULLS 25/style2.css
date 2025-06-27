@@ -1,5 +1,6 @@
 html, body{
     background-color: white;
+    width: 1600px;
 }
 .menu{
     position: relative;
