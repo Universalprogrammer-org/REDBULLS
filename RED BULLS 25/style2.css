@@ -1,6 +1,6 @@
 html, body{
     background-color: white;
-    width: 1600px;
+    width: 1550px;
 }
 .menu{
     position: relative;
@@ -111,4 +111,9 @@ html, body{
 @keyframes disapper{
     0% {left: 0;}
     100% {left: -250px;}
+}
+@media (max-width: 600px) {
+    html, body{
+        width: 1600px;
+    }
 }
