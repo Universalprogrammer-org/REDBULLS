@@ -151,8 +151,8 @@ html, body{
   transition: 0.5s;
 }
 .radio{
-  position: fixed;
-  top: 500px;
+  position: relative;
+  top: 130px;
   left: 620px;
   z-index: 5;
 }
