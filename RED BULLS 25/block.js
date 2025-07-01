@@ -7,18 +7,25 @@ let radio = document.getElementById('music');
 function pause(){
   song.pause();
 }
-function play() {
-    song.play();
-    loop();
-    started = true;
-}
-function back() {
+function stopAllAudio() {
   if (song && song.isPlaying()) {
     song.stop();
   }
+}
+
+function play() {
+  stopAllAudio();
+  song.play();
+  fft.setInput(song);
+  loop();
+  started = true;
+}
+function back() {
+  stopAllAudio();
   started = true;
   if (currentSongName === 'Interworld.mp3') {
     loadSound('1235289_Fluxxwave.mp3', function(newSong) {
+      stopAllAudio();
       song = newSong;
       currentSongName = '1235289_Fluxxwave.mp3';
       radio.textContent = 'Fluxxwave - Clovis Reyes';
@@ -29,6 +36,7 @@ function back() {
   } 
   else if(currentSongName === 'PASSO BEM SOLTO.mp3') {
     loadSound('Interworld.mp3', function(newSong) {
+      stopAllAudio();
       song = newSong;
       currentSongName = 'Interworld.mp3';
       radio.textContent = 'interworld - metamorphosis';
@@ -39,6 +47,7 @@ function back() {
   }
   else {
     loadSound('Interworld.mp3', function(newSong) {
+      stopAllAudio();
       song = newSong;
       currentSongName = 'Interworld.mp3';
       song.play();
@@ -47,13 +56,12 @@ function back() {
     });
   }
 }
-function forward(){
-  if (song && song.isPlaying()) {
-    song.stop();
-  }
+function forward() {
+  stopAllAudio();
   started = true;
   if (currentSongName === '1235289_Fluxxwave.mp3') {
     loadSound('Interworld.mp3', function(newSong) {
+      stopAllAudio();
       song = newSong;
       currentSongName = 'Interworld.mp3';
       radio.textContent = 'interworld - metamorphosis';
@@ -64,6 +72,7 @@ function forward(){
   }
   else if (currentSongName === 'Interworld.mp3') {
     loadSound('PASSO BEM SOLTO.mp3', function(newSong) {
+      stopAllAudio();
       song = newSong;
       currentSongName = 'PASSO BEM SOLTO.mp3';
       radio.textContent = 'PASSO BEM SOLTO - ATLXS';
@@ -72,8 +81,9 @@ function forward(){
       loop();
     });
   }
-   else {
+  else {
     loadSound('Interworld.mp3', function(newSong) {
+      stopAllAudio();
       song = newSong;
       currentSongName = 'Interworld.mp3';
       song.play();
@@ -232,6 +242,7 @@ let sparks = [];
 
 document.addEventListener('click', function playAudioOnce() {
   if (!started) {
+    stopAllAudio();
     if (song) {
       song.play();
       fft.setInput(song);
