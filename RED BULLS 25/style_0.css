@@ -114,6 +114,48 @@ html, body{
   z-index: 5;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.back{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.forward{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.play{
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
+  transition: 0.5s;
+}
+.pause{
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
+  transition: 0.5s;
+}
+.radio{
+  position: fixed;
+  top: 500px;
+  left: 620px;
+  z-index: 5;
+}
 
 @media (max-width: 1400px) {
   html, body{
@@ -224,6 +266,9 @@ html, body{
   font-size: 25px;
   z-index: 5;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.radio{
+  left: 500px;
 }
 }
 
@@ -658,5 +703,9 @@ html, body{
     text-align: center;
     max-width: 95vw;
     word-break: break-word;
+  }
+  .radio{
+    top: 530px;
+    left: 90px;
   }
 }
