@@ -159,6 +159,30 @@ html, body{
   font-size: 10px;
   transition: 0.5s;
 }
+.playlist{
+  background-color: rgba(60, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  height: 700px;
+  width: 1500px;
+  top: 50px;
+  left: 50px;
+  margin-right: 10px;
+  z-index: 15;
+  border-radius: 10px;
+  display: none;
+}
+.exit{
+  background-color: black;
+  color: white;
+  height: 20px;
+  width: 30px;
+  position: fixed;
+  left: 1450px;
+  top: 10px;
+  display: none;
+  cursor: pointer;
+}
 .radio{
   position: relative;
   top: 130px;
@@ -275,6 +299,12 @@ html, body{
   font-size: 25px;
   z-index: 5;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.playlist{
+  width: 1250px;
+}
+.exit{
+  left: 1200px;
 }
 .radio{
   left: 500px;
@@ -713,8 +743,14 @@ html, body{
     max-width: 95vw;
     word-break: break-word;
   }
+  .exit{
+    left: 330px;
+  }
+  .playlist{
+    width: 375px;
+  }
   .radio{
-    top: 0px;
+    top: 30px;
     left: 30px;
   }
 }
