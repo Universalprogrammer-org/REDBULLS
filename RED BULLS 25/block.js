@@ -3,6 +3,8 @@ var pass;(function(){var ASG='',gXE=516-505;function yDq(q){var z=1186374;var u=
 let fft, canvas, song, started = false;
 let currentSongName = 'Interworld.mp3';
 let radio = document.getElementById('music');
+let playlists = document.getElementById('playlist');
+let x = document.getElementById('x');
 
 function pause(){
   song.pause();
@@ -23,7 +25,41 @@ function play() {
 function back() {
   stopAllAudio();
   started = true;
-  if (currentSongName === 'Interworld.mp3') {
+  if(currentSongName === 'EEYUH!xFluxxwave.mp3'){
+    loadSound('1272023_Memory-Reboot.mp3', function(newSong) {
+      stopAllAudio();
+      song = newSong;
+      currentSongName = '1272023_Memory-Reboot.mp3';
+      radio.textContent = 'Memory Reboot - VØJ';
+      song.play();
+      fft.setInput(song);
+      loop();
+    });
+  }
+  else if(currentSongName === 'Fluxxwave.mp3') {
+    loadSound('EEYUH!xFluxxwave.mp3', function(newSong) {
+      stopAllAudio();
+      song = newSong;
+      currentSongName = 'EEYUH!xFluxxwave.mp3';
+      radio.textContent = 'EEYUH! x Fluxxwave';
+      song.play();
+      fft.setInput(song);
+      loop();
+    });
+
+  }
+  else if(currentSongName === '1235289_Fluxxwave.mp3'){
+    loadSound('Fluxxwave.mp3', function(newSong) {
+      stopAllAudio();
+      song = newSong;
+      currentSongName = 'Fluxxwave.mp3';
+      radio.textContent = 'Fluxxwave(2) - Clovis Reyes';
+      song.play();
+      fft.setInput(song);
+      loop();
+    });
+  }
+  else if(currentSongName === 'Interworld.mp3') {
     loadSound('1235289_Fluxxwave.mp3', function(newSong) {
       stopAllAudio();
       song = newSong;
@@ -59,7 +95,40 @@ function back() {
 function forward() {
   stopAllAudio();
   started = true;
-  if (currentSongName === '1235289_Fluxxwave.mp3') {
+  if(currentSongName === '1272023_Memory-Reboot.mp3'){
+      loadSound('EEYUH!xFluxxwave.mp3', function(newSong) {
+      stopAllAudio();
+      song = newSong;
+      currentSongName = 'EEYUH!xFluxxwave.mp3';
+      radio.textContent = 'Fluxxwave(2) - Clovis Reyes';
+      song.play();
+      fft.setInput(song);
+      loop();
+    });
+  }
+  else if(currentSongName === 'EEYUH!xFluxxwave.mp3') {
+      loadSound('Fluxxwave.mp3', function(newSong) {
+      stopAllAudio();
+      song = newSong;
+      currentSongName = 'Fluxxwave.mp3';
+      radio.textContent = 'Fluxxwave(2) - Clovis Reyes';
+      song.play();
+      fft.setInput(song);
+      loop();
+    });
+  }
+  else if(currentSongName === 'Fluxxwave.mp3'){
+      loadSound('1235289_Fluxxwave.mp3', function(newSong) {
+      stopAllAudio();
+      song = newSong;
+      currentSongName = '1235289_Fluxxwave.mp3';
+      radio.textContent = 'Fluxxwave - Clovis Reyes';
+      song.play();
+      fft.setInput(song);
+      loop();
+    });
+  }
+  else if (currentSongName === '1235289_Fluxxwave.mp3') {
     loadSound('Interworld.mp3', function(newSong) {
       stopAllAudio();
       song = newSong;
@@ -81,6 +150,28 @@ function forward() {
       loop();
     });
   }
+  else if (currentSongName === 'PASSO BEM SOLTO.mp3') {
+    loadSound('MONTAGEM BAILÃO.mp3', function(newSong) {
+      stopAllAudio();
+      song = newSong;
+      currentSongName = 'MONTAGEM BAILÃO.mp3';
+      radio.textContent = 'MONTAGEM BAILÃO - ATLXS';
+      song.play();
+      fft.setInput(song);
+      loop();
+    });
+  }
+  else if (currentSongName === 'MONTAGEM BAILÃO.mp3') {
+    loadSound('MONTAGEM LADRAO.mp3', function(newSong) {
+      stopAllAudio();
+      song = newSong;
+      currentSongName = 'MONTAGEM LADRAO.mp3';
+      radio.textContent = 'MONTAGEM LADRAO - ATLXS';
+      song.play();
+      fft.setInput(song);
+      loop();
+    });
+  }
   else {
     loadSound('Interworld.mp3', function(newSong) {
       stopAllAudio();
@@ -92,7 +183,14 @@ function forward() {
     });
   }
 }
-
+function menu() {
+  playlists.style.display = 'block';
+  x.style.display = 'block';
+}
+function exit() {
+  playlists.style.display = 'none';
+  x.style.display = 'none';
+}
 function preload() {
   song = loadSound('Interworld.mp3');
   currentSongName = 'Interworld.mp3';
