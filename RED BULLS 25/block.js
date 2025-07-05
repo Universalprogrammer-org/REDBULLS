@@ -215,6 +215,12 @@ function draw() {
   energy /= 3;
   if (energy > 180) bgFlashAlpha = map(energy, 180, 255, 80, 180, true);
   else bgFlashAlpha *= 0.92;
+
+  if (window.innerWidth <= 600) {
+    bgFlashAlpha *= 2.2;
+    bgFlashAlpha = constrain(bgFlashAlpha, 0, 255);
+  }
+
   push();
   resetMatrix();
   fill(0, 0, 0, bgFlashAlpha);
