@@ -215,7 +215,7 @@ function draw() {
   energy /= 3;
 
   // Ajuste de umbral para móviles
-  let threshold = window.innerWidth <= 600 ? 120 : 180;
+  let threshold = 180;
 
   if (energy > threshold) {
     bgFlashAlpha = map(energy, threshold, 255, 80, 180, true);
