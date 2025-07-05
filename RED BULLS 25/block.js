@@ -215,7 +215,7 @@ function draw() {
   energy /= 3;
 
   // Ajuste de umbral según tamaño de pantalla
-  let threshold = window.innerWidth <= 600 ? 160 : 180;
+  let threshold = window.innerWidth <= 600 ? 155 : 180;
 
   console.log(energy);
 
