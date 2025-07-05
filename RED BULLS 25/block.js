@@ -214,8 +214,8 @@ function draw() {
   let energy = fft.getEnergy("bass") + fft.getEnergy("mid") + fft.getEnergy("treble");
   energy /= 3;
 
-  // Ajuste de umbral para móviles
-  let threshold = 180;
+  // Ajuste de umbral según tamaño de pantalla
+  let threshold = window.innerWidth <= 600 ? 160 : 180;
 
   console.log(energy);
 
