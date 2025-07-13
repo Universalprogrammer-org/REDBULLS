@@ -816,7 +816,10 @@ html, body{
     left: 0px;
   }
   .font_menu{
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     top: -30px;
     left: 0px;
     font-size: 30px;
