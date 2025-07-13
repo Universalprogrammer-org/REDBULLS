@@ -19,10 +19,10 @@ html, body{
 }
 .logo3{
     position: fixed;
-    top: 80%;
-    left: 75%;
-    width: 7%;
-    height: 17%;
+    top: 270px;
+    left: 400px;
+    width: 700px;
+    height: 300px;
 }
 #visualizer-container {
   position: fixed;
@@ -113,6 +113,14 @@ html, body{
   font-size: 25px;
   z-index: 5;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.font6{
+  position: fixed;
+  top: 500px;
+  left: 650px;
+  font-size: 25px;
+  color: white;
+  text-shadow: 2px 2px 4px white;
 }
 .back{
   width: 50px;
@@ -214,8 +222,8 @@ html, body{
   background-color: rgba(60, 0, 0, 0.7);
   padding-left: 494px;
   padding-right: 494px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
   position: fixed;
   top: -30px;
@@ -229,13 +237,45 @@ html, body{
   top: 140px;
   left: 0;
   width: 185px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.4);
+  height: 60px;
+  background-color: rgba(100, 0, 0, 0.4);
   border: black solid 1px;
   cursor: pointer;
   z-index: -1;
+  transition: 0.5s;
 }
-
+.ImageDefault {
+  margin-top: 5px;
+  position: fixed;
+  top: 140px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.song_played {
+  position: fixed;
+  top: 125px;
+  left: 55px;
+  font-size: 15px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: -1;
+}
+.song_autor {
+  position: fixed;
+  top: 145px;
+  left: 65px;
+  font-size: 15px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: -1;
+}
+.NotImage:hover {
+  background-color: rgba(200, 0, 0, 0.8);
+}
 @media (max-width: 1400px) {
   html, body{
   margin: 0;
@@ -356,19 +396,51 @@ html, body{
   left: 500px;
 }
 .font_menu{
-  padding: 30px;
+  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   top: -30px;
   left: 0px;
   font-size: 30px;
 }
 .font_menu2{
-  padding-left: 389px;
-  padding-right: 389px;
+  padding-left: 369px;
+  padding-right: 369px;
   padding-top: 10px;
   padding-bottom: 10px;
   top: -30px;
-  left: 145px;
+  left: 185px;
   font-size: 30px;
+}
+.NotImage {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 185px;
+  height: 50px;
+  background-color: rgba(100, 0, 0, 0.4);
+  border: black solid 1px;
+  cursor: pointer;
+  z-index: -1;
+  transition: 0.5s;
+}
+.ImageDefault {
+  top: 100px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+.song_played {
+  top: 80px;
+  left: 45px;
+  font-size: 15px;
+}
+.song_autor {
+  top: 95px;
+  left: 60px;
+  font-size: 15px;
 }
 }
 
@@ -832,5 +904,46 @@ html, body{
     top: -18px;
     left: 115px;
     font-size: 18px;
-}
+  }
+  .NotImage {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 115px;
+  height: 50px;
+  background-color: rgba(100, 0, 0, 0.4);
+  border: black solid 1px;
+  cursor: pointer;
+  z-index: -1;
+  }
+  .ImageDefault {
+    top: 80px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .song_played {
+    top: 75px;
+    left: 40px;
+    font-size: 10px;
+  }
+  .song_autor {
+    top: 90px;
+    left: 50px;
+    font-size: 10px;
+  }
+  .logo3{
+    top: 270px;
+    left: -70px;
+    width: 600px;
+    height: 280px;
+  }
+  .font6{
+    position: fixed;
+    top: 470px;
+    left: 130px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px white;
+  }
 }  
