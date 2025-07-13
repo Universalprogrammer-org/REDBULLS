@@ -100,7 +100,7 @@ function forward() {
       stopAllAudio();
       song = newSong;
       currentSongName = 'EEYUH!xFluxxwave.mp3';
-      radio.textContent = 'Fluxxwave(2) - Clovis Reyes';
+      radio.textContent = 'EEYUH! x Fluxxwave';
       song.play();
       fft.setInput(song);
       loop();
@@ -214,7 +214,6 @@ function draw() {
   let energy = fft.getEnergy("bass") + fft.getEnergy("mid") + fft.getEnergy("treble");
   energy /= 3;
 
-  // Ajuste de umbral según tamaño de pantalla
   let threshold = window.innerWidth <= 600 ? 155 : 180;
 
   console.log(energy);
