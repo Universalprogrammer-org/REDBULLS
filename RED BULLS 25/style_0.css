@@ -212,8 +212,8 @@ html, body{
 }
 .font_menu2{
   background-color: rgba(60, 0, 0, 0.7);
-  padding-left: 482px;
-  padding-right: 482px;
+  padding-left: 494px;
+  padding-right: 494px;
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
@@ -221,7 +221,7 @@ html, body{
   top: -30px;
   left: 185px;
   font-size: 30px;
-  font-family: cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   z-index: -1;
 }
 .NotImage {
@@ -362,8 +362,8 @@ html, body{
   font-size: 30px;
 }
 .font_menu2{
-  padding-left: 377px;
-  padding-right: 377px;
+  padding-left: 389px;
+  padding-right: 389px;
   padding-top: 10px;
   padding-bottom: 10px;
   top: -30px;
@@ -822,8 +822,8 @@ html, body{
     font-size: 30px;
   }
   .font_menu2{
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
     padding-top: 1px;
     padding-bottom: 1px;
     top: -18px;
