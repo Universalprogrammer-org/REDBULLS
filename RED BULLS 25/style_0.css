@@ -881,7 +881,7 @@ html, body{
   }
   .playlist{
     width: 375px;
-    left: 20px;
+    left: 10px;
   }
   .radio{
     top: 30px;
@@ -890,8 +890,8 @@ html, body{
   .font_menu{
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 23px;
+    padding-bottom: 23px;
     top: -30px;
     left: 0px;
     font-size: 30px;
