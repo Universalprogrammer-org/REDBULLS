@@ -29,13 +29,18 @@
         <button class="exit" onclick="exit()" id="x">x</button>
         <h3 class="font_menu">Songs</h3>
         <h3 class="font_menu2">by Universalprogrammer</h3>
-        <img src="https://i.ibb.co/4ggkmMnn/Icon-2.png" class="logo3">
-        <h3 class="font6">We´re the RedBulls</h3>
-        <button class="NotImage">
+        <img src="https://i.ibb.co/4ggkmMnn/Icon-2.png" class="logo3" id="first_forever">
+        <h3 class="font6" id="first">We´re the RedBulls</h3>
+        <button class="NotImage" onclick="first_song()">
             <img src="https://cdn-icons-png.flaticon.com/512/27/27188.png" class="ImageDefault">
             <h5 class="song_played">metamorphosis</h5>
             <h5 class="song_autor">interworld</h5>
         </button>
+        <img src="https://cdn-icons-png.flaticon.com/512/27/27188.png" class="Background" id="Background">
+        <h3 class="title" id="title">Metamorphosis | Interworld</h3>
+        <div id="progress-container">
+            <input type="range" id="progress" value="0" min="0" max="100" step="0.1">
+        </div>
     </div>
 
     <h3 class="font5">contribuidores:</h3>
