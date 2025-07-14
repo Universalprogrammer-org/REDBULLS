@@ -5,6 +5,7 @@ let currentSongName = 'Interworld.mp3';
 let radio = document.getElementById('music');
 let playlists = document.getElementById('playlist');
 let x = document.getElementById('x');
+const progress = document.getElementById('progress');
 
 function pause(){
   song.pause();
@@ -195,8 +196,51 @@ function preload() {
   song = loadSound('Interworld.mp3');
   currentSongName = 'Interworld.mp3';
 }
+function first_song() {
+  first_screen = document.getElementById('first_forever');
+  first_screen2 = document.getElementById('first');
+  background = document.getElementById('Background');
+  title = document.getElementById('title');
+  music_bar = document.getElementById('progress-container');
+  if(first_screen.style.display === 'block' || first_screen.style.display === '') {
+    first_screen.style.display = 'none';
+    first_screen2.style.display = 'none';
+    background.style.display = 'block';
+    title.style.display = 'block';
+    music_bar.style.display = 'block';
+  }
+  else{
+    first_screen.style.display = 'block';
+    first_screen2.style.display = 'block';
+    background.style.display = 'none';
+    title.style.display = 'none';
+    music_bar.style.display = 'none';
+  }
+}
+
+function updateProgressBar() {
+  if (song && song.isPlaying()) {
+    progress.max = song.duration();
+    progress.value = song.currentTime();
+  }
+}
+function updateProgressBarVisual() {
+  if (!song || !song.duration()) return;
+
+  const percentage = (song.currentTime() / song.duration()) * 100;
+  progress.style.background = `linear-gradient(to right, red ${percentage}%, #333 ${percentage}%)`;
+}
+function setupProgressBarEvents() {
+  progress.addEventListener('input', () => {
+    if (song) {
+      song.jump(parseFloat(progress.value));
+    }
+  });
+}
+
 
 function setup() {
+  setupProgressBarEvents();
   canvas = createCanvas(window.innerWidth, window.innerHeight);
   canvas.parent('visualizer-container');
   fft = new p5.FFT();
@@ -208,6 +252,8 @@ let glowAlpha = 0;
 let lastEnergy = 0;
 
 function draw() {
+  updateProgressBar();
+  updateProgressBarVisual();
   clear();
 
   let spectrum = fft.analyze();
