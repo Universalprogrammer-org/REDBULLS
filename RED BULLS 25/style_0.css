@@ -14,8 +14,8 @@ html, body{
     position: fixed;
     top: 80%;
     left: 25%;
-    width: 7%;
-    height: 17%;
+    width: 10%;
+    height: 20%;
 }
 .logo3{
     position: fixed;
@@ -149,6 +149,91 @@ html, body{
   font-size: 10px;
   transition: 0.5s;
 }
+.play2{
+  position: fixed;
+  left: 725px;
+  top: 570px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 0px 5px 5px black;
+  transition: 0.5s;
+  display: none;
+}
+.play3{
+  position: fixed;
+  left: 650px;
+  top: 575px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 0px 3px 5px black;
+  transition: 0.5s;
+  display: none;
+}
+.play4{
+  position: fixed;
+  left: 785px;
+  top: 575px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 0px 3px 5px black;
+  transition: 0.5s;
+  display: none;
+}
+.play5{
+  position: fixed;
+  left: 870px;
+  top: 575px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 0px 3px 5px black;
+  transition: 0.5s;
+  display: none;
+}
+.play6{
+  position: fixed;
+  left: 580px;
+  top: 575px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 0px 3px 5px black;
+  transition: 0.5s;
+  display: none;
+}
 .pause{
   width: 25px;
   height: 25px;
@@ -259,7 +344,7 @@ html, body{
   position: fixed;
   width: 200px;
   top: 150px;
-  left: 650px;
+  left: 640px;
   display: none;
   transition: 0.5s;
 }
@@ -270,7 +355,7 @@ html, body{
 .title{
   position: fixed;
   top: 370px;
-  left: 620px;
+  left: 600px;
   font-size: 20px;
   color: white;
   text-shadow: 2px 2px 4px black;
@@ -362,7 +447,7 @@ html, body{
     position: fixed;
     top: 80%;
     left: 25%;
-    width: 7%;
+    width: 10%;
     height: 17%;
 }
 #visualizer-container {
@@ -510,6 +595,97 @@ html, body{
   top: 95px;
   left: 60px;
   font-size: 15px;
+}
+.play2{
+  position: fixed;
+  left: 620px;
+  top: 570px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 0px 5px 5px black;
+  transition: 0.5s;
+  display: none;
+}
+.play3{
+  position: fixed;
+  left: 545px;
+  top: 575px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 0px 3px 5px black;
+  transition: 0.5s;
+  display: none;
+}
+.play4{
+  position: fixed;
+  left: 680px;
+  top: 575px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 0px 3px 5px black;
+  transition: 0.5s;
+  display: none;
+}
+.play5{
+  position: fixed;
+  left: 765px;
+  top: 575px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 0px 3px 5px black;
+  transition: 0.5s;
+  display: none;
+}
+.play6{
+  position: fixed;
+  left: 475px;
+  top: 575px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 0px 3px 5px black;
+  transition: 0.5s;
+  display: none;
+}
+.title{
+  left: 520px;
+}
+.Background{
+  left: 550px;
 }
 }
 
@@ -882,7 +1058,7 @@ html, body{
     position: static;
     display: block;
     margin: 10px auto;
-    width: 30vw;
+    width: 40vw;
     height: auto;
     top: 0;
     left: 0;
@@ -1012,6 +1188,7 @@ html, body{
   .title{
     top: 370px;
     left: 100px;
+    font-size: 15px;
   }
   .logo3{
     top: 270px;
@@ -1026,5 +1203,45 @@ html, body{
     font-size: 25px;
     color: white;
     text-shadow: 2px 2px 4px white;
+  }
+  .play2{
+    left: 220px;
+    top: 570px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .play3{
+    left: 160px;
+    top: 575px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .play4{
+    left: 265px;
+    top: 575px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .play5{
+    left: 335px;
+    top: 575px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+  .play6{
+    left: 105px;
+    top: 575px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
   }
 }  
