@@ -421,17 +421,8 @@ html, body{
         top: 1600px;
     }
     @media (max-width: 395px) {
-    .link{
-        position: relative;
-        top: 310px;
-        z-index: 3;
-        left: 70px;
-        color: black;
-        text-decoration: black;
-        font-family: cursive, 'Brush Script MT', 'Brush Script Std', 'Brush Script', cursive;
-    }
     .footer{
-        top: 1600px;
+        top: 2500px;
     }
     }
     @keyframes colors{
