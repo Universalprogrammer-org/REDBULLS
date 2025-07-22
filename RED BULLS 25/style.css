@@ -409,6 +409,31 @@ html, body{
         left: 100px;
         text-shadow: 0px 0px 10px white;
     }
+    .link{
+        position: relative;
+        top: 310px;
+        z-index: 3;
+        color: black;
+        text-decoration: black;
+        font-family: cursive, 'Brush Script MT', 'Brush Script Std', 'Brush Script', cursive;
+    }
+    .footer{
+        top: 900px;
+    }
+    @media (max-width: 395px) {
+    .link{
+        position: relative;
+        top: 310px;
+        z-index: 3;
+        left: 70px;
+        color: black;
+        text-decoration: black;
+        font-family: cursive, 'Brush Script MT', 'Brush Script Std', 'Brush Script', cursive;
+    }
+    .footer{
+        top: 900px;
+    }
+    }
     @keyframes colors{
         0% {background-color: white;}
         50% {background-color: red;}
@@ -416,14 +441,3 @@ html, body{
     }
 }
 
-@media (max-width: 600px){
-    .link{
-        position: relative;
-        top: 310px;
-        left: 70px;
-        z-index: 3;
-        color: black;
-        text-decoration: black;
-        font-family: cursive, 'Brush Script MT', 'Brush Script Std', 'Brush Script', cursive;
-    }
-}
