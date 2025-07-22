@@ -418,7 +418,7 @@ html, body{
         font-family: cursive, 'Brush Script MT', 'Brush Script Std', 'Brush Script', cursive;
     }
     .footer{
-        top: 900px;
+        top: 1600px;
     }
     @media (max-width: 395px) {
     .link{
@@ -431,7 +431,7 @@ html, body{
         font-family: cursive, 'Brush Script MT', 'Brush Script Std', 'Brush Script', cursive;
     }
     .footer{
-        top: 900px;
+        top: 1600px;
     }
     }
     @keyframes colors{
