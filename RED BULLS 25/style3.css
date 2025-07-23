@@ -3,8 +3,12 @@ html, body{
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
-    width: 100%;
+    width: 1550px;
     background: linear-gradient(to bottom, black , red);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .menu{
     position: relative;
