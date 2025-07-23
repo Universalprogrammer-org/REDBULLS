@@ -82,6 +82,25 @@ html, body{
 .opcion2:hover{
     text-shadow: 10px 5px 5px white;
 }
+.opcion3{
+    background-color: rgba(80, 0, 0, 0.5);
+    width: 250px;
+    height: 50px;
+    position: relative;
+    top: 160px;
+    left: 0;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+.opcion3:active{
+    background-color: red;
+}
+.opcion3:hover{
+    text-shadow: 10px 5px 5px white;
+}
 @font-face {
     font-family: 'TitleFont';
     src: url('Darkcastle.otf') format('woff2');
@@ -147,4 +166,7 @@ tr{
     html, body{
         width: 1600px;
     }
+}
+body {
+    transition: background-color 0.5s;
 }
