@@ -12,8 +12,8 @@ html, body{
 }
 .menu{
     position: relative;
-    top: 10px;
-    left: 20px;
+    top: -40px;
+    left: 30px;
     height: 40px;
     width: 40px;
     border-radius: 5px;
@@ -112,13 +112,26 @@ html, body{
 .title{
     position: relative;
     top: 40px;
-    left: 500px;
+    text-align: center;
     text-shadow: 0px 0px 30px white;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
-    display: inline;
     
+}
+.link1{
+    top: 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    text-shadow: 0px 0px 30px white;
+}
+.link1:hover{
+    text-shadow: 0px 0px 10px red;
 }
 @keyframes appear{
     0% {left: -250px;}
