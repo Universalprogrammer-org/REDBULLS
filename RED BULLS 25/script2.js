@@ -30,7 +30,7 @@ function come2(){
     location.href = "Lanzamientos.html";
 }
 function come3(){
-    location.href = "Futsal-masculino(Entrada).html";
+    location.href = "Futsal(Entrada).html";
 }
 function come4(){
     location.href = "Lanzamientos.html";
