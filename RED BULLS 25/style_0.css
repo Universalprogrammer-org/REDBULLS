@@ -128,8 +128,14 @@ html, body{
   background-color: black;
   color: white;
   cursor: pointer;
+  border: outset orange;
   font-size: 20px;
   transition: 0.5s;
+}
+.back:hover{
+  background-color: orange;
+  border: outset red;
+  color: black;
 }
 .forward{
   width: 50px;
@@ -137,8 +143,14 @@ html, body{
   background-color: black;
   color: white;
   cursor: pointer;
+  border: outset orange;
   font-size: 20px;
   transition: 0.5s;
+}
+.forward:hover{
+  background-color: orange;
+  border: outset red;
+  color: black;
 }
 .play{
   width: 25px;
@@ -146,6 +158,7 @@ html, body{
   background-color: black;
   color: white;
   cursor: pointer;
+  border: thin solid orange;
   font-size: 10px;
   transition: 0.5s;
 }
@@ -240,6 +253,7 @@ html, body{
   background-color: black;
   color: white;
   cursor: pointer;
+  border: thin solid orange;
   font-size: 10px;
   transition: 0.5s;
 }
@@ -249,6 +263,7 @@ html, body{
   background-color: black;
   color: white;
   cursor: pointer;
+  border: thin solid orange;
   font-size: 10px;
   transition: 0.5s;
 }
@@ -289,8 +304,15 @@ html, body{
   padding-right: 1px;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: rgb(0, 150, 0);
+  color: yellow;
   display: inline-block;
+  border: 1px solid green;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  transition: 0.5s;
+}
+.screen:hover{
+  background: linear-gradient(to left, yellow 0% 3%, rgba(0, 0, 0, 0) 15% 85%, yellow 97% 100%);
+  transition: 0.5s;
 }
 .font_menu{
   background-color: rgba(60, 0, 0, 0.5);
@@ -326,6 +348,7 @@ html, body{
   background-color: rgba(100, 0, 0, 0.4);
   border: black solid 1px;
   cursor: pointer;
+  overflow: hidden;
   z-index: -1;
   transition: 0.5s;
 }
@@ -357,7 +380,7 @@ html, body{
   top: 370px;
   left: 600px;
   font-size: 20px;
-  color: white;
+  color: yellow;
   text-shadow: 2px 2px 4px black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: none;
@@ -416,6 +439,7 @@ html, body{
   font-size: 15px;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
   z-index: -1;
 }
 .song_autor {
@@ -429,6 +453,7 @@ html, body{
 }
 .NotImage:hover {
   background-color: rgba(200, 0, 0, 0.8);
+  border: yellow solid 1px;
 }
 @media (max-width: 1400px) {
   html, body{
