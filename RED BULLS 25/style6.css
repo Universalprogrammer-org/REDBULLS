@@ -1,0 +1,130 @@
+html, body{
+    background-image: url("https://i.ibb.co/FbV9fD6c/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    margin: 0;
+}
+.send{
+    position: fixed;
+    top: 700px;
+    left: 650px;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(10, 10, 10, 0.5);
+    backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.send:hover{
+    background-color: rgba(10, 10, 10, 0.8);
+}
+.Notsend{
+    position: fixed;
+    top: 700px;
+    left: 800px;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(10, 10, 10, 0.5);
+    backdrop-filter: blur(5px);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Notsend:hover{
+    background-color: rgba(10, 10, 10, 0.8);
+}
+.title{
+    background-color: rgba(10, 0, 0, 0.5);
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.Iconby{
+    position: fixed;
+    top: 20px;
+    left: 600px;
+    color: white;
+    font-size: 20px;
+    font-family: cursive, sans-serif;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px red;
+}
+@media(max-width: 1400px) {
+    .send {
+        left: 500px;
+    }
+    .Notsend {
+        left: 650px;
+    }
+    .Iconby {
+        left: 460px;
+    }
+}
+@media(max-width: 1200px) {
+    .send {
+        left: 400px;
+    }
+    .Notsend {
+        left: 550px;
+    }
+    .Iconby {
+        left: 360px;
+    }
+}
+@media(max-width: 1000px) {
+    .send {
+        left: 300px;
+    }
+    .Notsend {
+        left: 450px;
+    }
+    .Iconby {
+        left: 260px;
+    }
+}
+@media(max-width: 800px) {
+    .send {
+        left: 200px;
+    }
+    .Notsend {
+        left: 350px;
+    }
+    .Iconby {
+        left: 160px;
+    }
+}
+@media(max-width: 600px) {
+    .send {
+        left: 100px;
+    }
+    .Notsend {
+        left: 250px;
+    }
+    .Iconby {
+        top: 30px;
+        left: 100px;
+        font-size: 15px;
+    }
+}
+@media(max-width: 400px) {
+    .send {
+        left: 30px;
+    }
+    .Notsend {
+        left: 180px;
+    }
+    .Iconby {
+        left: 10px;
+    }
+}
