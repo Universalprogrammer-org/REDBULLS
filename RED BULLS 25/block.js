@@ -6,6 +6,7 @@ let playlists = document.getElementById('playlist');
 let x = document.getElementById('x');
 let button_play = document.getElementById("click");
 let title = document.getElementById('title');
+let song_played = document.getElementById('song_played');
 const progress = document.getElementById('progress');
 
 function pause(){
@@ -37,6 +38,10 @@ const playlist = [
   { file: 'MONTAGEM BAILÃO.mp3', title: 'MONTAGEM BAILÃO - ATLXS', menu_title: 'MONTAGEM BAILÃO - ATLXS' },
   { file: 'MONTAGEM LADRAO.mp3', title: 'MONTAGEM LADRAO - ATLXS', menu_title: 'MONTAGEM LADRAO - ATLXS' }
 ];
+
+function personalization_song(){
+  location.href = 'Personalization.html';
+}
 
 let currentIndex = 4;
 
