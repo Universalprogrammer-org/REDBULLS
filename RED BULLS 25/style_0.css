@@ -352,10 +352,38 @@ html, body{
   z-index: -1;
   transition: 0.5s;
 }
+.NotImage2{
+  position: fixed;
+  top: 200px;
+  left: 0;
+  width: 185px;
+  height: 60px;
+  background-color: rgba(100, 0, 0, 0.4);
+  border: black solid 1px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: -1;
+  transition: 0.5s;
+}
+.NotImage2:hover {
+  background-color: rgba(200, 0, 0, 0.8);
+  border: yellow solid 1px;
+}
 .ImageDefault {
   margin-top: 5px;
   position: fixed;
   top: 140px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.ImageDefault2{
+  margin-top: 5px;
+  position: fixed;
+  top: 200px;
   left: 0;
   width: 50px;
   height: 50px;
@@ -435,6 +463,16 @@ html, body{
 .song_played {
   position: fixed;
   top: 125px;
+  left: 55px;
+  font-size: 15px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  z-index: -1;
+}
+.song_played2 {
+  position: fixed;
+  top: 190px;
   left: 55px;
   font-size: 15px;
   color: white;
@@ -1176,15 +1214,26 @@ html, body{
     font-size: 18px;
   }
   .NotImage {
-  position: fixed;
-  top: 80px;
-  left: 0;
-  width: 115px;
-  height: 50px;
-  background-color: rgba(100, 0, 0, 0.4);
-  border: black solid 1px;
-  cursor: pointer;
-  z-index: -1;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 115px;
+    height: 50px;
+    background-color: rgba(100, 0, 0, 0.4);
+    border: black solid 1px;
+    cursor: pointer;
+    z-index: -1;
+  }
+  .NotImage2{
+    position: fixed;
+    top: 130px;
+    left: 0;
+    width: 115px;
+    height: 50px;
+    background-color: rgba(100, 0, 0, 0.4);
+    border: black solid 1px;
+    cursor: pointer;
+    z-index: -1;
   }
   .ImageDefault {
     top: 80px;
@@ -1192,9 +1241,21 @@ html, body{
     width: 40px;
     height: 40px;
   }
+  .ImageDefault2{
+    top: 130px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+  }
   .song_played {
     top: 75px;
     left: 40px;
+    font-size: 10px;
+  }
+  .song_played2 {
+    top: 130px;
+    left: 30px;
     font-size: 10px;
   }
   .song_autor {
