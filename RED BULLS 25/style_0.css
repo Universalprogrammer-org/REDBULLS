@@ -1257,6 +1257,7 @@ html, body{
     top: 130px;
     left: 30px;
     font-size: 10px;
+    z-index: 10;
   }
   .song_autor {
     top: 90px;
@@ -1273,7 +1274,7 @@ html, body{
   }
   .title{
     top: 370px;
-    left: 100px;
+    left: 120px;
     font-size: 15px;
   }
   .logo3{
@@ -1291,7 +1292,7 @@ html, body{
     text-shadow: 2px 2px 4px white;
   }
   .play2{
-    left: 220px;
+    left: 200px;
     top: 570px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -1299,7 +1300,7 @@ html, body{
     padding-right: 9px;
   }
   .play3{
-    left: 160px;
+    left: 140px;
     top: 575px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -1307,7 +1308,7 @@ html, body{
     padding-right: 9px;
   }
   .play4{
-    left: 265px;
+    left: 245px;
     top: 575px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -1315,7 +1316,7 @@ html, body{
     padding-right: 9px;
   }
   .play5{
-    left: 335px;
+    left: 315px;
     top: 575px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -1323,7 +1324,7 @@ html, body{
     padding-right: 9px;
   }
   .play6{
-    left: 105px;
+    left: 85px;
     top: 575px;
     padding-top: 3px;
     padding-bottom: 3px;
