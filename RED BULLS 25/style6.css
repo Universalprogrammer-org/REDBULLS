@@ -107,9 +107,11 @@ html, body{
 @media(max-width: 600px) {
     .send {
         left: 100px;
+        top: 670px;
     }
     .Notsend {
         left: 250px;
+        top: 670px;
     }
     .Iconby {
         top: 30px;
@@ -120,8 +122,10 @@ html, body{
 @media(max-width: 400px) {
     .send {
         left: 30px;
+        top: 670px;
     }
     .Notsend {
+        top: 670px;
         left: 180px;
     }
     .Iconby {
