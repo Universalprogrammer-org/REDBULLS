@@ -60,6 +60,33 @@ html, body{
     text-decoration: underline;
     text-shadow: 1px 1px 2px red;
 }
+.container1 {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    background-color: rgba(10, 10, 10, 0.5);
+    width: 80vw;
+    height: 40px;
+}
+.img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+.text1 {
+    position: absolute;
+    top: -20px;
+    left: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 40px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
 @media(max-width: 1400px) {
     .send {
         left: 500px;
@@ -103,6 +130,10 @@ html, body{
     .Iconby {
         left: 160px;
     }
+    .container1 {
+        left: 50px;
+        width: 90vw;
+    }
 }
 @media(max-width: 600px) {
     .send {
@@ -117,6 +148,15 @@ html, body{
         top: 30px;
         left: 100px;
         font-size: 15px;
+    }
+    .container1 {
+        left: 20px;
+        width: 90vw;
+    }
+    .text1 {
+        font-size: 16px;
+        left: 60px;
+        top: -15px;
     }
 }
 @media(max-width: 400px) {
