@@ -74,21 +74,36 @@ html, body{
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     width: 1500px;
-    height: 100px;
+    height: 290px;
     position: relative;
     top: 270px;
     left: 50px;
     border-width: 5px;
     border-radius: 20px;
 }
-.link{
-    position: relative;
-    top: 310px;
-    left: -130px;
-    z-index: 3;
-    color: black;
-    text-decoration: black;
-    font-family: cursive, 'Brush Script MT', 'Brush Script Std', 'Brush Script', cursive;
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* espacio entre links */
+  padding: 20px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 20px;
+  max-width: 1400px;
+  min-width: 1400px;
+  margin-top: 300px;
+  margin-left: 50px;
+}
+
+.links-container a {
+  color: black;
+  font-family: cursive, 'Brush Script MT', cursive;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.links-container a:hover {
+  text-decoration: underline;
 }
 .menu{
     position: relative;
