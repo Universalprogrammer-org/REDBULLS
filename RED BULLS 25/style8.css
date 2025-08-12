@@ -64,6 +64,16 @@ body, html{
     color: rgb(255, 255, 0);
     border-color: rgb(255, 255, 0);
 }
+.Forgetpass {
+    position: fixed;
+    top: 500px;
+    left: 45vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
 @keyframes borderAnimation {
     0% {
         border-color: rgb(255, 255, 0);
@@ -84,6 +94,9 @@ body, html{
     }
     .title {
         left: 48vw;
+    }
+    .Forgetpass {
+        left: 45.5vw;
     }
 }
 @media (max-width: 1200px) {
@@ -128,6 +141,9 @@ body, html{
     .title {
         left: 42vw;
     }
+    .Forgetpass {
+        left: 35vw;
+    }
 }
 
 @media (max-width: 600px) {
@@ -158,5 +174,8 @@ body, html{
     }
     .title {
         left: 37vw;
+    }
+    .Forgetpass {
+        left: 30vw;
     }
 }
