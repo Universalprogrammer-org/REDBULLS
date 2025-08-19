@@ -1180,10 +1180,10 @@ html, body{
     word-break: break-word;
   }
   .cycle {
-    position: static;
+    position: relative;
     width: 250px;
     left: 0;
-    top: 0;
+    top: 100px;
     display: block;
     margin: 30px auto 10px auto;
   }
