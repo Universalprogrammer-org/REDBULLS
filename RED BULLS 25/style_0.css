@@ -1368,6 +1368,7 @@ html, body{
     position: relative;
     display: inline-block;
     left: 15vw;
+    width: 230px;
 }
   .play{
     top: 50px;
