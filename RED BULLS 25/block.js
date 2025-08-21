@@ -9,6 +9,15 @@ let title = document.getElementById('title');
 let song_played = document.getElementById('song_played');
 const progress = document.getElementById('progress');
 
+window.onload = function() {
+  let anim2 = document.getElementById("anim2");
+  anim2.play();
+
+  anim2.addEventListener("ended", function() {
+    anim2.style.display = "none";
+  });
+};
+
 function pause(){
   song.pause();
   button_play.textContent = "►"
@@ -374,3 +383,4 @@ function windowResized() {
     container.style.height = window.innerHeight + 'px';
   }
 }
+
