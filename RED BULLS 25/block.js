@@ -227,7 +227,7 @@ function draw() {
   let energy = fft.getEnergy("bass") + fft.getEnergy("mid") + fft.getEnergy("treble");
   energy /= 3;
 
-  let threshold = window.innerWidth <= 600 ? 155 : 180;
+  let threshold = window.innerWidth <= 1400 ? 155 : 180;
 
   console.log(energy);
 
@@ -383,4 +383,5 @@ function windowResized() {
     container.style.height = window.innerHeight + 'px';
   }
 }
+
 
