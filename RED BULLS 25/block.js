@@ -16,7 +16,29 @@ window.onload = function() {
   anim2.addEventListener("ended", function() {
     anim2.style.display = "none";
   });
+
+  // Cargar audio personalizado si existe
+  let customAudio = localStorage.getItem("customAudio");
+  let customAudioName = localStorage.getItem("customAudioName");
+
+  if (customAudio && customAudioName) {
+    loadSound(customAudio, function(newSong) {
+      song = newSong;
+      currentSongName = "CUSTOM_AUDIO"; // puedes marcarlo así
+      radio.textContent = customAudioName;
+      title.textContent = customAudioName;
+    });
+  } else {
+    // Si no hay audio personalizado, cargar la canción por defecto
+    loadSound(playlist[currentIndex].file, function(newSong) {
+      song = newSong;
+      currentSongName = playlist[currentIndex].file;
+      radio.textContent = playlist[currentIndex].title;
+      title.textContent = playlist[currentIndex].menu_title;
+    });
+  }
 };
+
 
 function pause(){
   song.pause();
@@ -45,7 +67,8 @@ const playlist = [
   { file: 'Interworld.mp3', title: 'interworld - metamorphosis', menu_title: 'interworld - metamorphosis' },
   { file: 'PASSO BEM SOLTO.mp3', title: 'PASSO BEM SOLTO - ATLXS', menu_title: 'PASSO BEM SOLTO - ATLXS' },
   { file: 'MONTAGEM BAILÃO.mp3', title: 'MONTAGEM BAILÃO - ATLXS', menu_title: 'MONTAGEM BAILÃO - ATLXS' },
-  { file: 'MONTAGEM LADRAO.mp3', title: 'MONTAGEM LADRAO - ATLXS', menu_title: 'MONTAGEM LADRAO - ATLXS' }
+  { file: 'MONTAGEM LADRAO.mp3', title: 'MONTAGEM LADRAO - ATLXS', menu_title: 'MONTAGEM LADRAO - ATLXS' },
+  { file: 'CUSTOM_AUDIO', title: 'Tema Personalizado', menu_title: 'Tema Personalizado' }
 ];
 
 function personalization_song(){
@@ -53,7 +76,6 @@ function personalization_song(){
 }
 
 let currentIndex = 4;
-
 function setCurrentIndexByName(name) {
   const index = playlist.findIndex(item => item.file === name);
   if (index !== -1) currentIndex = index;
@@ -70,7 +92,6 @@ function changeSong(direction) {
   }
 
   const nextSong = playlist[currentIndex];
-
   loadSound(nextSong.file, function(newSong) {
     song = newSong;
     currentSongName = nextSong.file;
@@ -83,19 +104,12 @@ function changeSong(direction) {
   });
 }
 
-function back() {
-  changeSong('back');
-}
-
-function forward() {
-  changeSong('forward');
-}
+function back() { changeSong('back'); }
+function forward() { changeSong('forward'); }
 
 function play() {
   if (song && song.isPlaying()) return;
-
   stopAllAudio();
-
   const currentTrack = playlist[currentIndex];
 
   if (song && song.isLoaded() && currentSongName === currentTrack.file) {
@@ -120,8 +134,6 @@ function play() {
   });
 }
 
-
-
 function menu() {
   playlists.style.display = 'block';
   x.style.display = 'block';
@@ -131,8 +143,8 @@ function exit() {
   x.style.display = 'none';
 }
 function preload() {
-  song = loadSound('Interworld.mp3');
-  currentSongName = 'Interworld.mp3';
+  song = loadSound('Aha - Take On Me.mp3');
+  currentSongName = 'Aha - Take On Me.mp3';
 }
 function before() {
   if (song && song.isLoaded()) {
@@ -147,17 +159,15 @@ function after() {
   }
 }
 
-
-
 function first_song() {
-  first_screen = document.getElementById('first_forever');
-  first_screen2 = document.getElementById('first');
-  background = document.getElementById('Background');
-  music_bar = document.getElementById('progress-container');
-  click_before = document.getElementById('click2');
-  click_after = document.getElementById('click3');
-  forward2 = document.getElementById('click4');
-  before2 = document.getElementById('click5');
+  let first_screen = document.getElementById('first_forever');
+  let first_screen2 = document.getElementById('first');
+  let background = document.getElementById('Background');
+  let music_bar = document.getElementById('progress-container');
+  let click_before = document.getElementById('click2');
+  let click_after = document.getElementById('click3');
+  let forward2 = document.getElementById('click4');
+  let before2 = document.getElementById('click5');
 
   if(first_screen.style.display === 'block' || first_screen.style.display === '') {
     first_screen.style.display = 'none';
@@ -170,8 +180,7 @@ function first_song() {
     click_before.style.display = 'block';
     before2.style.display = 'block';
     forward2.style.display = 'block';
-  }
-  else{
+  } else {
     first_screen.style.display = 'block';
     first_screen2.style.display = 'block';
     background.style.display = 'none';
@@ -185,6 +194,7 @@ function first_song() {
   }
 }
 
+// -------------------- BARRA DE PROGRESO --------------------
 function updateProgressBar() {
   if (song && song.isPlaying()) {
     progress.max = song.duration();
@@ -193,19 +203,16 @@ function updateProgressBar() {
 }
 function updateProgressBarVisual() {
   if (!song || !song.duration()) return;
-
   const percentage = (song.currentTime() / song.duration()) * 100;
   progress.style.background = `linear-gradient(to right, red ${percentage}%, #333 ${percentage}%)`;
 }
 function setupProgressBarEvents() {
   progress.addEventListener('input', () => {
-    if (song) {
-      song.jump(parseFloat(progress.value));
-    }
+    if (song) song.jump(parseFloat(progress.value));
   });
 }
 
-
+// -------------------- VISUALIZADOR --------------------
 function setup() {
   setupProgressBarEvents();
   canvas = createCanvas(window.innerWidth, window.innerHeight);
@@ -217,6 +224,8 @@ function setup() {
 let bgFlashAlpha = 0;
 let glowAlpha = 0; 
 let lastEnergy = 0;
+let particles = [];
+let sparks = [];
 
 function draw() {
   updateProgressBar();
@@ -224,36 +233,26 @@ function draw() {
   clear();
 
   let spectrum = fft.analyze();
-  let energy = fft.getEnergy("bass") + fft.getEnergy("mid") + fft.getEnergy("treble");
-  energy /= 3;
-
+  let energy = (fft.getEnergy("bass") + fft.getEnergy("mid") + fft.getEnergy("treble")) / 3;
   let threshold = window.innerWidth <= 1400 ? 155 : 180;
 
-  console.log(energy);
-
-  if (energy > threshold) {
-    bgFlashAlpha = map(energy, threshold, 255, 80, 180, true);
-  } else {
-    bgFlashAlpha *= 0.92;
-  }
-
+  if (energy > threshold) bgFlashAlpha = map(energy, threshold, 255, 80, 180, true);
+  else bgFlashAlpha *= 0.92;
   bgFlashAlpha = constrain(bgFlashAlpha, 0, 255);
 
   push();
-  resetMatrix();
   fill(0, 0, 0, bgFlashAlpha);
   rect(0, 0, width, height);
   pop();
 
   translate(width / 2, height / 2);
-
   let minDim = min(width, height);
   let baseRadius = minDim * 0.28;
   let deformMax = minDim * 0.33;
-
   let avgAmp = 0;
   let points = 180;
   let spectrumStep = Math.floor(spectrum.length / points);
+
   beginShape();
   stroke(255, 255, 0, 200);
   strokeWeight(minDim * 0.008);
@@ -267,10 +266,7 @@ function draw() {
     avgAmp += amp;
     let deform = map(amp, 0, 256, 0, deformMax);
     let r = baseRadius + deform;
-    let x = r * cos(angle);
-    let y = r * sin(angle);
-    vertex(x, y);
-
+    vertex(r * cos(angle), r * sin(angle));
   }
   endShape(CLOSE);
 
@@ -314,9 +310,7 @@ function draw() {
     strokeWeight(minDim * 0.006);
     fill(0, 240);
     ellipse(particles[i].x, particles[i].y, particles[i].size * 1.3);
-    if (particles[i].isDead()) {
-      particles.splice(i, 1);
-    }
+    if (particles[i].isDead()) particles.splice(i, 1);
   }
 
   let stars = [];
@@ -335,42 +329,24 @@ function draw() {
   }
 }
 
-class Particle {
+class SmoothParticle {
   constructor(x, y, angle, speed, size) {
-    this.x = x;
-    this.y = y;
-    this.angle = angle;
-    this.speed = speed;
+    this.x = x; this.y = y;
+    this.vx = Math.cos(angle) * speed;
+    this.vy = Math.sin(angle) * speed;
     this.size = size;
-    this.life = 60 + Math.random() * 40;
+    this.life = 80 + Math.random() * 40;
+    this.friction = 0.92;
   }
-  update() {
-    this.x += this.speed * Math.cos(this.angle);
-    this.y += this.speed * Math.sin(this.angle);
-    this.life--;
-  }
-  show() {
-    noStroke();
-    fill(0, 180);
-    ellipse(this.x, this.y, this.size);
-  }
-  isDead() {
-    return this.life <= 0;
-  }
+  update() { this.x += this.vx; this.y += this.vy; this.vx *= this.friction; this.vy *= this.friction; this.life--; }
+  show() { noStroke(); fill(255, 200, 50, map(this.life, 0, 120, 0, 255)); ellipse(this.x, this.y, this.size); }
+  isDead() { return this.life <= 0; }
 }
-
-let particles = [];
-let sparks = [];
 
 document.addEventListener('click', function playAudioOnce() {
   if (!started) {
     stopAllAudio();
-    if (song) {
-      song.play();
-      fft.setInput(song);
-      loop();
-      started = true;
-    }
+    if (song) { song.play(); fft.setInput(song); loop(); started = true; }
   }
   document.removeEventListener('click', playAudioOnce);
 });
@@ -383,5 +359,3 @@ function windowResized() {
     container.style.height = window.innerHeight + 'px';
   }
 }
-
-
