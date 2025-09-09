@@ -143,8 +143,8 @@ function exit() {
   x.style.display = 'none';
 }
 function preload() {
-  song = loadSound('Aha - Take On Me.mp3');
-  currentSongName = 'Aha - Take On Me.mp3';
+  song = loadSound('Interworld.mp3');
+  currentSongName = 'Interworld.mp3';
 }
 function before() {
   if (song && song.isLoaded()) {
