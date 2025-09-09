@@ -17,26 +17,50 @@ window.onload = function() {
     anim2.style.display = "none";
   });
 
-  // Cargar audio personalizado si existe
-  let customAudio = localStorage.getItem("customAudio");
-  let customAudioName = localStorage.getItem("customAudioName");
+  // Intentar cargar audio personalizado desde IndexedDB
+  let request = indexedDB.open("AudioDB", 1);
 
-  if (customAudio && customAudioName) {
-    loadSound(customAudio, function(newSong) {
-      song = newSong;
-      currentSongName = "CUSTOM_AUDIO"; // puedes marcarlo así
-      radio.textContent = customAudioName;
-      title.textContent = customAudioName;
-    });
-  } else {
-    // Si no hay audio personalizado, cargar la canción por defecto
+  request.onsuccess = function(event) {
+    let db = event.target.result;
+    let transaction = db.transaction(["audios"], "readonly");
+    let store = transaction.objectStore("audios");
+    let getAudio = store.get("customAudio");
+    let getName = store.get("customAudioName");
+
+    getAudio.onsuccess = function() {
+      let audioBlob = getAudio.result;
+      if (audioBlob) {
+        let audioURL = URL.createObjectURL(audioBlob);
+        getName.onsuccess = function() {
+          let audioName = getName.result || "Tema Personalizado";
+          loadSound(audioURL, function(newSong) {
+            song = newSong;
+            currentSongName = "CUSTOM_AUDIO";
+            radio.textContent = audioName;
+            title.textContent = audioName;
+          });
+        };
+      } else {
+        // Si no hay audio personalizado, cargar la canción por defecto
+        loadSound(playlist[currentIndex].file, function(newSong) {
+          song = newSong;
+          currentSongName = playlist[currentIndex].file;
+          radio.textContent = playlist[currentIndex].title;
+          title.textContent = playlist[currentIndex].menu_title;
+        });
+      }
+    };
+  };
+
+  request.onerror = function() {
+    // Si falla IndexedDB, cargar la canción por defecto
     loadSound(playlist[currentIndex].file, function(newSong) {
       song = newSong;
       currentSongName = playlist[currentIndex].file;
       radio.textContent = playlist[currentIndex].title;
       title.textContent = playlist[currentIndex].menu_title;
     });
-  }
+  };
 };
 
 
