@@ -17,7 +17,6 @@ window.onload = function() {
     anim2.style.display = "none";
   });
 
-  // Intentar cargar audio personalizado desde IndexedDB
   let request = indexedDB.open("AudioDB", 1);
 
   request.onsuccess = function(event) {
@@ -36,12 +35,12 @@ window.onload = function() {
           loadSound(audioURL, function(newSong) {
             song = newSong;
             currentSongName = "CUSTOM_AUDIO";
+            isCustomAudioLoaded = true;
             radio.textContent = audioName;
             title.textContent = audioName;
           });
         };
       } else {
-        // Si no hay audio personalizado, cargar la canción por defecto
         loadSound(playlist[currentIndex].file, function(newSong) {
           song = newSong;
           currentSongName = playlist[currentIndex].file;
@@ -53,7 +52,6 @@ window.onload = function() {
   };
 
   request.onerror = function() {
-    // Si falla IndexedDB, cargar la canción por defecto
     loadSound(playlist[currentIndex].file, function(newSong) {
       song = newSong;
       currentSongName = playlist[currentIndex].file;
@@ -134,7 +132,55 @@ function forward() { changeSong('forward'); }
 function play() {
   if (song && song.isPlaying()) return;
   stopAllAudio();
+
+  if (isCustomAudioLoaded && song && currentSongName === "CUSTOM_AUDIO") {
+    song.play();
+    fft.setInput(song);
+    loop();
+    started = true;
+    button_play.textContent = "||";
+    return;
+  }
+
   const currentTrack = playlist[currentIndex];
+
+  if (currentTrack.file === "CUSTOM_AUDIO") {
+    let request = indexedDB.open("AudioDB", 1);
+    request.onsuccess = function(event) {
+      let db = event.target.result;
+      let transaction = db.transaction(["audios"], "readonly");
+      let store = transaction.objectStore("audios");
+      let getAudio = store.get("customAudio");
+      let getName = store.get("customAudioName");
+
+      getAudio.onsuccess = function() {
+        let audioBlob = getAudio.result;
+        if (audioBlob) {
+          let audioURL = URL.createObjectURL(audioBlob);
+          getName.onsuccess = function() {
+            let audioName = getName.result || "Tema Personalizado";
+            loadSound(audioURL, function(newSong) {
+              song = newSong;
+              currentSongName = "CUSTOM_AUDIO";
+              radio.textContent = audioName;
+              title.textContent = audioName;
+              song.play();
+              fft.setInput(song);
+              loop();
+              started = true;
+              button_play.textContent = "||";
+            });
+          };
+        } else {
+          alert("No hay audio personalizado guardado.");
+        }
+      };
+    };
+    request.onerror = function() {
+      alert("No se pudo cargar el audio personalizado.");
+    };
+    return;
+  }
 
   if (song && song.isLoaded() && currentSongName === currentTrack.file) {
     song.play();
@@ -218,7 +264,6 @@ function first_song() {
   }
 }
 
-// -------------------- BARRA DE PROGRESO --------------------
 function updateProgressBar() {
   if (song && song.isPlaying()) {
     progress.max = song.duration();
@@ -236,7 +281,6 @@ function setupProgressBarEvents() {
   });
 }
 
-// -------------------- VISUALIZADOR --------------------
 function setup() {
   setupProgressBarEvents();
   canvas = createCanvas(window.innerWidth, window.innerHeight);
@@ -382,4 +426,4 @@ function windowResized() {
     container.style.width = window.innerWidth + 'px';
     container.style.height = window.innerHeight + 'px';
   }
-}
+}let isCustomAudioLoaded = false;
