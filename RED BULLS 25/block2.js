@@ -19,6 +19,25 @@ function menu(){
         }, 1001);
     }
 }
+onload = function(){
+    let time = document.getElementById("time");
+    let countDownDate = new Date("Sep 15, 2025 06:30:00").getTime();
+    let x = setInterval(function() {
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        time.textContent = "Faltan: " + days + " d " + hours + " hs " + minutes + " min " + seconds + " s ";
+        if (distance < 0) {
+            clearInterval(x);
+            time.textContent = "Comenzamos!";
+        }
+    }, 1000);
+}
+ 
+
 function come(){
     location.href = "Entrada.html";
 }
