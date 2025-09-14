@@ -13,9 +13,9 @@ window.onload = function() {
   let anim2 = document.getElementById("anim2");
   anim2.play();
 
-  anim2.addEventListener("ended", function() {
+  setTimeout(function(){
     anim2.style.display = "none";
-  });
+  }, 3800);
 
   let request = indexedDB.open("AudioDB", 1);
 
